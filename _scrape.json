@@ -1,0 +1,31 @@
+{
+  "name": "Gower Legal LLC",
+  "brand": "Gower Legal",
+  "attorney": "C. Jacob Gower, Esq.",
+  "attorney_short": "Jacob Gower",
+  "role": "Injury & Trial Attorney",
+  "phone": "340-277-2799",
+  "phone_e164": "+13402772799",
+  "email": "jacob@gowerlegal.com",
+  "address": "1919 Pine St, New Orleans, LA 70118",
+  "city": "New Orleans",
+  "neighborhood": "Uptown",
+  "state": "Louisiana",
+  "bar": "Louisiana, 2012",
+  "education": "LSU Paul M. Hebert Law Center, J.D. 2012, Magna Cum Laude, Order of the Coif",
+  "recognition": "Super Lawyers Rising Stars 2018–2025",
+  "services": [
+    "Car Wrecks",
+    "Slip and Fall",
+    "Rideshare",
+    "Trucking Accidents",
+    "Storm & Hurricane Claims"
+  ],
+  "primary_keyword": "New Orleans personal injury lawyer",
+  "vi_url": "https://gowerlegal.com/",
+  "source": "business-profile",
+  "logo": "found",
+  "photos": "mixed",
+  "photos_note": "Found: logo.png and temporary About headshot from gowerlegal.com. Generated: hero likeness composite on an Uptown porch (client brief), storm still, four practice stills, three results stills. Generated people in practice stills are not named as Jacob or clients.",
+  "omitted": ["hours", "google_rating", "parish_list", "license_number"]
+}

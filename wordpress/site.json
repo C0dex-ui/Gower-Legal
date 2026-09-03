@@ -1,0 +1,27 @@
+{
+  "live": "https://darkseagreen-meerkat-953381.hostingersite.com",
+  "company": "Gower Legal",
+  "legalName": "Gower Legal LLC",
+  "tagline": "A New Orleans personal injury lawyer who still sits on the porch.",
+  "phone": "340-277-2799",
+  "phoneHref": "tel:+13402772799",
+  "email": "jacob@gowerlegal.com",
+  "address": "1919 Pine St, New Orleans, LA 70118",
+  "attorney": "C. Jacob Gower, Esq.",
+  "theme": "hello-elementor",
+  "plugins": ["elementor", "happy-elementor-addons", "novamira"],
+  "noNewPlugins": true,
+  "headerFooter": "happy-addons-theme-builder",
+  "doNotCopyLocalIds": true,
+  "homepageOnly": true,
+  "colors": {
+    "ink": "#013447",
+    "mute": "#3d5560",
+    "teal": "#027fa4",
+    "tealDeep": "#01607c",
+    "sand": "#eeab5a",
+    "paper": "#ffe9ce",
+    "white": "#fff6ea",
+    "hairline": "#f0cfa3"
+  }
+}

@@ -1,0 +1,276 @@
+﻿{
+    "content":  [
+                    {
+                        "id":  "7b04c28",
+                        "elType":  "container",
+                        "isInner":  false,
+                        "settings":  {
+                                         "background_color":  "#f6f1e8",
+                                         "background_background":  "classic",
+                                         "flex_direction":  "column",
+                                         "flex_gap":  {
+                                                          "column":  "0",
+                                                          "row":  "0",
+                                                          "isLinked":  true,
+                                                          "unit":  "px"
+                                                      },
+                                         "_css_classes":  "gower-header",
+                                         "content_width":  "full",
+                                         "css_classes":  "gower-header",
+                                         "padding":  {
+                                                         "unit":  "px",
+                                                         "top":  "0",
+                                                         "right":  "0",
+                                                         "bottom":  "0",
+                                                         "left":  "0",
+                                                         "isLinked":  true
+                                                     }
+                                     },
+                        "elements":  [
+                                         {
+                                             "id":  "d963953",
+                                             "elType":  "container",
+                                             "isInner":  true,
+                                             "settings":  {
+                                                              "content_width":  "boxed",
+                                                              "boxed_width":  {
+                                                                                  "unit":  "px",
+                                                                                  "size":  1200
+                                                                              },
+                                                              "padding":  {
+                                                                              "unit":  "px",
+                                                                              "top":  "8",
+                                                                              "right":  "24",
+                                                                              "bottom":  "8",
+                                                                              "left":  "24",
+                                                                              "isLinked":  false
+                                                                          },
+                                                              "min_height":  {
+                                                                                 "unit":  "px",
+                                                                                 "size":  94
+                                                                             },
+                                                              "flex_gap":  {
+                                                                               "column":  "22",
+                                                                               "row":  "22",
+                                                                               "isLinked":  true,
+                                                                               "unit":  "px"
+                                                                           },
+                                                              "background_color":  "#f6f1e8",
+                                                              "flex_wrap":  "nowrap",
+                                                              "_css_classes":  "gower-header-bar",
+                                                              "flex_direction":  "row",
+                                                              "flex_justify_content":  "space-between",
+                                                              "flex_align_items":  "center",
+                                                              "background_background":  "classic",
+                                                              "css_classes":  "gower-header-bar"
+                                                          },
+                                             "elements":  [
+                                                              {
+                                                                  "id":  "6f85860",
+                                                                  "elType":  "container",
+                                                                  "isInner":  true,
+                                                                  "settings":  {
+                                                                                   "_element_width":  "auto",
+                                                                                   "width":  {
+                                                                                                 "unit":  "px",
+                                                                                                 "size":  "auto"
+                                                                                             },
+                                                                                   "content_width":  "full",
+                                                                                   "_css_classes":  "gower-header-logo",
+                                                                                   "css_classes":  "gower-header-logo",
+                                                                                   "flex_direction":  "column",
+                                                                                   "padding":  {
+                                                                                                   "unit":  "px",
+                                                                                                   "top":  "0",
+                                                                                                   "right":  "0",
+                                                                                                   "bottom":  "0",
+                                                                                                   "left":  "0",
+                                                                                                   "isLinked":  true
+                                                                                               }
+                                                                               },
+                                                                  "elements":  [
+                                                                                   {
+                                                                                       "id":  "8425f6f",
+                                                                                       "elType":  "widget",
+                                                                                       "widgetType":  "html",
+                                                                                       "isInner":  false,
+                                                                                       "settings":  {
+                                                                                                        "html":  "\u003ca class=\"gower-wordmark\" href=\"/\"\u003e\u003cspan\u003eGower Legal\u003c/span\u003e\u003ci aria-hidden=\"true\"\u003e\u003c/i\u003e\u003csmall\u003ePine Street, Uptown\u003c/small\u003e\u003c/a\u003e",
+                                                                                                        "_margin":  {
+                                                                                                                        "unit":  "px",
+                                                                                                                        "top":  "0",
+                                                                                                                        "right":  "0",
+                                                                                                                        "bottom":  "0",
+                                                                                                                        "left":  "0",
+                                                                                                                        "isLinked":  true
+                                                                                                                    }
+                                                                                                    },
+                                                                                       "elements":  [
+
+                                                                                                    ]
+                                                                                   }
+                                                                               ]
+                                                              },
+                                                              {
+                                                                  "id":  "064037c",
+                                                                  "elType":  "container",
+                                                                  "isInner":  true,
+                                                                  "settings":  {
+                                                                                   "_element_width":  "auto",
+                                                                                   "width":  {
+                                                                                                 "unit":  "px",
+                                                                                                 "size":  "auto"
+                                                                                             },
+                                                                                   "content_width":  "full",
+                                                                                   "_css_classes":  "gower-header-nav",
+                                                                                   "css_classes":  "gower-header-nav",
+                                                                                   "flex_direction":  "column",
+                                                                                   "padding":  {
+                                                                                                   "unit":  "px",
+                                                                                                   "top":  "0",
+                                                                                                   "right":  "0",
+                                                                                                   "bottom":  "0",
+                                                                                                   "left":  "0",
+                                                                                                   "isLinked":  true
+                                                                                               }
+                                                                               },
+                                                                  "elements":  [
+                                                                                   {
+                                                                                       "id":  "ed707c1",
+                                                                                       "elType":  "widget",
+                                                                                       "widgetType":  "ha-navigation-menu",
+                                                                                       "isInner":  false,
+                                                                                       "settings":  {
+                                                                                                        "nav_menu_item_typography_font_weight":  "700",
+                                                                                                        "hamburger_close_icon":  {
+                                                                                                                                     "library":  "fa-solid",
+                                                                                                                                     "value":  "fas fa-times"
+                                                                                                                                 },
+                                                                                                        "nav_menu_item_hover_color":  "#8b3a2f",
+                                                                                                        "nav_menu_item_typography_font_family":  "PT Sans",
+                                                                                                        "nav_menu_item_typography_font_size":  {
+                                                                                                                                                   "unit":  "px",
+                                                                                                                                                   "size":  15
+                                                                                                                                               },
+                                                                                                        "nav_menu_item_typography_typography":  "custom",
+                                                                                                        "nav_menu_res_icon_color":  "#2f4a3c",
+                                                                                                        "hamburger_icon":  {
+                                                                                                                               "library":  "fa-solid",
+                                                                                                                               "value":  "fas fa-bars"
+                                                                                                                           },
+                                                                                                        "nav_menu_item_active_color":  "#8b3a2f",
+                                                                                                        "nav_menu_list":  "primary",
+                                                                                                        "nav_menu_position":  "flex-end",
+                                                                                                        "nav_menu_item_color":  "#2f4a3c",
+                                                                                                        "_margin":  {
+                                                                                                                        "unit":  "px",
+                                                                                                                        "top":  "0",
+                                                                                                                        "right":  "0",
+                                                                                                                        "bottom":  "0",
+                                                                                                                        "left":  "0",
+                                                                                                                        "isLinked":  true
+                                                                                                                    }
+                                                                                                    },
+                                                                                       "elements":  [
+
+                                                                                                    ]
+                                                                                   }
+                                                                               ]
+                                                              },
+                                                              {
+                                                                  "id":  "b699bba",
+                                                                  "elType":  "container",
+                                                                  "isInner":  true,
+                                                                  "settings":  {
+                                                                                   "_element_width":  "auto",
+                                                                                   "width":  {
+                                                                                                 "unit":  "px",
+                                                                                                 "size":  "auto"
+                                                                                             },
+                                                                                   "content_width":  "full",
+                                                                                   "_css_classes":  "gower-header-cta",
+                                                                                   "css_classes":  "gower-header-cta",
+                                                                                   "flex_direction":  "column",
+                                                                                   "padding":  {
+                                                                                                   "unit":  "px",
+                                                                                                   "top":  "0",
+                                                                                                   "right":  "0",
+                                                                                                   "bottom":  "0",
+                                                                                                   "left":  "0",
+                                                                                                   "isLinked":  true
+                                                                                               }
+                                                                               },
+                                                                  "elements":  [
+                                                                                   {
+                                                                                       "id":  "a9501b6",
+                                                                                       "elType":  "widget",
+                                                                                       "widgetType":  "button",
+                                                                                       "isInner":  false,
+                                                                                       "settings":  {
+                                                                                                        "text":  "Call Now",
+                                                                                                        "link":  {
+                                                                                                                     "url":  "tel:+13402772799",
+                                                                                                                     "is_external":  "",
+                                                                                                                     "nofollow":  ""
+                                                                                                                 },
+                                                                                                        "background_color":  "#2f4a3c",
+                                                                                                        "button_text_color":  "#ffffff",
+                                                                                                        "hover_color":  "#1c1c1c",
+                                                                                                        "background_hover_color":  "#c4a46a",
+                                                                                                        "border_radius":  {
+                                                                                                                              "unit":  "px",
+                                                                                                                              "top":  "2",
+                                                                                                                              "right":  "2",
+                                                                                                                              "bottom":  "2",
+                                                                                                                              "left":  "2",
+                                                                                                                              "isLinked":  true
+                                                                                                                          },
+                                                                                                        "text_padding":  {
+                                                                                                                             "unit":  "px",
+                                                                                                                             "top":  "14",
+                                                                                                                             "right":  "22",
+                                                                                                                             "bottom":  "14",
+                                                                                                                             "left":  "22",
+                                                                                                                             "isLinked":  false
+                                                                                                                         },
+                                                                                                        "_css_classes":  "gower-btn gower-btn-primary",
+                                                                                                        "_element_width":  "auto",
+                                                                                                        "typography_typography":  "custom",
+                                                                                                        "typography_font_family":  "PT Sans",
+                                                                                                        "typography_font_size":  {
+                                                                                                                                     "unit":  "px",
+                                                                                                                                     "size":  12
+                                                                                                                                 },
+                                                                                                        "typography_font_weight":  "700",
+                                                                                                        "typography_text_transform":  "uppercase",
+                                                                                                        "typography_letter_spacing":  {
+                                                                                                                                          "unit":  "px",
+                                                                                                                                          "size":  0.6
+                                                                                                                                      },
+                                                                                                        "_margin":  {
+                                                                                                                        "unit":  "px",
+                                                                                                                        "top":  "0",
+                                                                                                                        "right":  "0",
+                                                                                                                        "bottom":  "0",
+                                                                                                                        "left":  "0",
+                                                                                                                        "isLinked":  true
+                                                                                                                    }
+                                                                                                    },
+                                                                                       "elements":  [
+
+                                                                                                    ]
+                                                                                   }
+                                                                               ]
+                                                              }
+                                                          ]
+                                         }
+                                     ]
+                    }
+                ],
+    "page_settings":  {
+                          "hide_title":  "yes"
+                      },
+    "version":  "0.4",
+    "title":  "Site Header",
+    "type":  "header"
+}

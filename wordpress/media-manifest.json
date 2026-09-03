@@ -1,0 +1,17 @@
+{
+  "count": 11,
+  "sourceDir": ".",
+  "files": [
+    { "key": "logo", "file": "logo.png", "source": "logo.png" },
+    { "key": "hero", "file": "hero-jacob-porch.png", "source": "assets/hero-jacob-porch.png" },
+    { "key": "storm", "file": "storm-uptown-porch.png", "source": "assets/storm-uptown-porch.png" },
+    { "key": "practice-car", "file": "practice-car-wrecks.png", "source": "assets/practice-car-wrecks.png" },
+    { "key": "practice-slip", "file": "practice-slip-fall.png", "source": "assets/practice-slip-fall.png" },
+    { "key": "practice-rideshare", "file": "practice-rideshare.png", "source": "assets/practice-rideshare.png" },
+    { "key": "practice-truck", "file": "practice-trucking.png", "source": "assets/practice-trucking.png" },
+    { "key": "headshot", "file": "jacob-headshot.jpg", "source": "assets/jacob-headshot.jpg" },
+    { "key": "result-porch", "file": "result-porch.png", "source": "assets/result-porch.png" },
+    { "key": "result-streetcar", "file": "result-streetcar.png", "source": "assets/result-streetcar.png" },
+    { "key": "result-hurricane", "file": "result-hurricane.png", "source": "assets/result-hurricane.png" }
+  ]
+}
