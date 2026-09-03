@@ -11,22 +11,19 @@
   <meta property="og:image" content="assets/hero-jacob-porch.png">
   <meta property="og:type" content="website">
   <link rel="icon" href="logo.png">
+  <link rel="preload" as="image" href="assets/hero-jacob-porch.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" as="image" href="assets/hero-jacob-porch.png">
 </head>
 <body data-storm="on">
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="grain grain-soft" aria-hidden="true"></div>
-    <div class="fiber" aria-hidden="true"></div>
     <div class="wrap header-inner">
       <a class="brand" href="#top">
-        <span>Gower Legal</span>
-        <small>Pine Street, Uptown</small>
+        <img src="logo.png" width="220" height="72" alt="Gower Legal">
       </a>
       <details class="nav-menu">
         <summary class="nav-toggle" aria-label="Open menu">Menu</summary>
@@ -45,65 +42,73 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <img class="hero-photo" src="assets/hero-jacob-porch.png" width="1600" height="900" alt="C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans">
+      <img class="hero-photo" src="assets/hero-jacob-porch.png" width="1600" height="900" alt="Jacob Gower on an Uptown porch in late light" fetchpriority="high">
       <div class="hero-veil" aria-hidden="true"></div>
-      <div class="grain" aria-hidden="true"></div>
       <div class="wrap hero-copy">
-        <p class="label">Uptown · 1919 Pine Street</p>
+        <p class="label">Uptown &middot; 1919 Pine Street</p>
         <h1>A New Orleans personal injury lawyer <em>who still sits on the porch.</em></h1>
-        <p class="lede">Gower Legal is Jacob Gower’s boutique on Pine Street in Uptown — call a neighbor, not a billboard.</p>
+        <p class="lede">Gower Legal is Jacob Gower&rsquo;s boutique on Pine Street in Uptown &mdash; call a neighbor, not a billboard.</p>
         <a class="btn btn-primary" href="tel:+13402772799">Call Now</a>
       </div>
     </section>
 
     <section class="storm" id="storm" aria-label="Storm claims">
-      <div class="grain" aria-hidden="true"></div>
-      <div class="fiber" aria-hidden="true"></div>
-      <div class="wrap split">
-        <div class="split-copy">
-          <p class="label">Southern Louisiana · after the storm</p>
+      <div class="wrap split storm-split">
+        <div class="split-copy storm-copy">
+          <p class="label">Southern Louisiana &middot; after the storm</p>
           <h2>Storm Claims</h2>
           <p>When a hurricane hits the Gulf, this band comes on so you do not have to hunt. Jacob handles storm and hurricane property claims across Southern Louisiana.</p>
-          <a class="btn btn-paper" href="tel:+13402772799">Call Now</a>
+          <a class="btn btn-brass" href="tel:+13402772799">Call Now</a>
         </div>
-        <div class="storm-gallery" aria-label="Storm claims photographs">
-          <img src="assets/storm-uptown-porch.png" width="900" height="900" alt="Wet Uptown New Orleans porch and oak limbs after a Gulf storm">
-          <img src="assets/result-hurricane.png" width="600" height="600" alt="Blue tarp on an Uptown roof after a storm">
+        <div class="storm-gallery">
+          <figure class="frame">
+            <img src="assets/storm-uptown-porch.png" width="900" height="900" alt="Wet Uptown New Orleans porch and oak limbs after a Gulf storm" loading="lazy">
+          </figure>
+          <figure class="frame">
+            <img src="assets/result-hurricane.png" width="600" height="600" alt="Blue tarp on an Uptown roof after a storm" loading="lazy">
+          </figure>
         </div>
       </div>
     </section>
 
     <section class="practice" id="practice">
-      <div class="grain grain-soft" aria-hidden="true"></div>
-      <div class="fiber" aria-hidden="true"></div>
       <div class="wrap">
         <header class="section-head">
+          <p class="label">What we take</p>
           <h2>Practice Areas</h2>
           <p class="sub">The same streets you drive. These are the matters we take in New Orleans.</p>
         </header>
         <ul class="circles">
           <li>
-            <a class="circle" href="#practice" data-n="01">
-              <img src="assets/practice-car-wrecks.png" width="400" height="400" alt="Cars along an oak-lined Uptown New Orleans avenue after a wreck" loading="lazy">
-              <span>Car Wrecks</span>
+            <a class="circle" href="#practice">
+              <span class="circle-media">
+                <img src="assets/practice-car-wrecks.png" width="400" height="400" alt="Cars along an oak-lined Uptown New Orleans avenue after a wreck" loading="lazy">
+              </span>
+              <span class="circle-label">Car Wrecks</span>
             </a>
           </li>
           <li>
-            <a class="circle" href="#practice" data-n="02">
-              <img src="assets/practice-slip-fall.png" width="400" height="400" alt="Wet cracked Uptown sidewalk under live oaks after rain" loading="lazy">
-              <span>Slip and Fall</span>
+            <a class="circle" href="#practice">
+              <span class="circle-media">
+                <img src="assets/practice-slip-fall.png" width="400" height="400" alt="Wet cracked Uptown sidewalk under live oaks after rain" loading="lazy">
+              </span>
+              <span class="circle-label">Slip and Fall</span>
             </a>
           </li>
           <li>
-            <a class="circle" href="#practice" data-n="03">
-              <img src="assets/practice-rideshare.png" width="400" height="400" alt="Rideshare sedan at the curb on a leafy Uptown residential street" loading="lazy">
-              <span>Rideshare</span>
+            <a class="circle" href="#practice">
+              <span class="circle-media">
+                <img src="assets/practice-rideshare.png" width="400" height="400" alt="Rideshare sedan at the curb on a leafy Uptown residential street" loading="lazy">
+              </span>
+              <span class="circle-label">Rideshare</span>
             </a>
           </li>
           <li>
-            <a class="circle" href="#practice" data-n="04">
-              <img src="assets/practice-trucking.png" width="400" height="400" alt="Box truck on a wet New Orleans street near oak-lined blocks" loading="lazy">
-              <span>Trucking Accidents</span>
+            <a class="circle" href="#practice">
+              <span class="circle-media">
+                <img src="assets/practice-trucking.png" width="400" height="400" alt="Box truck on a wet New Orleans street near oak-lined blocks" loading="lazy">
+              </span>
+              <span class="circle-label">Trucking Accidents</span>
             </a>
           </li>
         </ul>
@@ -111,9 +116,7 @@
     </section>
 
     <section class="about" id="about">
-      <div class="grain grain-soft" aria-hidden="true"></div>
-      <div class="fiber" aria-hidden="true"></div>
-      <div class="wrap split">
+      <div class="wrap split about-split">
         <div class="split-copy">
           <p class="label">Who you are calling</p>
           <h2>About / Who You Are</h2>
@@ -124,74 +127,64 @@
             </div>
             <div class="fact">
               <dt>Education</dt>
-              <dd>LSU Law, 2012 — Magna Cum Laude, Order of the Coif</dd>
+              <dd>LSU Law, 2012 &mdash; Magna Cum Laude, Order of the Coif</dd>
             </div>
             <div class="fact">
               <dt>Recognition</dt>
-              <dd>Rising Star, 2018–2025</dd>
+              <dd>Rising Star, 2018&ndash;2025</dd>
             </div>
           </dl>
           <p class="about-close">You talk to the lawyer who handles the file.</p>
           <a class="btn btn-ink" href="#about">Learn More</a>
         </div>
-        <figure class="split-media about-media">
+        <figure class="about-media">
           <img src="assets/jacob-headshot.jpg" width="600" height="756" alt="C. Jacob Gower, New Orleans personal injury lawyer" loading="lazy">
         </figure>
       </div>
     </section>
 
     <section class="quotes" id="testimonials">
-      <div class="grain" aria-hidden="true"></div>
-      <div class="fiber" aria-hidden="true"></div>
       <div class="wrap">
         <header class="section-head">
+          <p class="label">In the neighborhood</p>
           <h2>Testimonials</h2>
           <p class="sub">Placeholder quotes for homepage review. They are not real client reviews.</p>
         </header>
         <div class="carousel" data-carousel>
-          <button class="chevron prev" type="button" aria-label="Previous testimonials">‹</button>
+          <button class="chevron prev" type="button" aria-label="Previous testimonials">&lsaquo;</button>
           <div class="carousel-track" tabindex="0">
             <article class="quote">
-              <div class="quote-body">
-                <span aria-hidden="true">“</span>
-                <p>He called me back the same afternoon and talked like a neighbor, not a commercial.</p>
-                <p class="attr">Sample — Uptown resident</p>
-              </div>
+              <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+              <p>He called me back the same afternoon and talked like a neighbor, not a commercial.</p>
+              <p class="attr">Sample &mdash; Uptown resident</p>
             </article>
             <article class="quote">
-              <div class="quote-body">
-                <span aria-hidden="true">“</span>
-                <p>I did not want a downtown firm. I wanted someone who knew the street I wrecked on.</p>
-                <p class="attr">Sample — Carrollton</p>
-              </div>
+              <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+              <p>I did not want a downtown firm. I wanted someone who knew the street I wrecked on.</p>
+              <p class="attr">Sample &mdash; Carrollton</p>
             </article>
             <article class="quote">
-              <div class="quote-body">
-                <span aria-hidden="true">“</span>
-                <p>The insurance emails stopped landing on me. That was the whole point of hiring him.</p>
-                <p class="attr">Sample — Mid-City</p>
-              </div>
+              <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+              <p>The insurance emails stopped landing on me. That was the whole point of hiring him.</p>
+              <p class="attr">Sample &mdash; Mid-City</p>
             </article>
             <article class="quote">
-              <div class="quote-body">
-                <span aria-hidden="true">“</span>
-                <p>After the storm he told us what to photograph before we pulled a single board.</p>
-                <p class="attr">Sample — Southern Louisiana</p>
-              </div>
+              <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+              <p>After the storm he told us what to photograph before we pulled a single board.</p>
+              <p class="attr">Sample &mdash; Southern Louisiana</p>
             </article>
           </div>
-          <button class="chevron next" type="button" aria-label="Next testimonials">›</button>
+          <button class="chevron next" type="button" aria-label="Next testimonials">&rsaquo;</button>
         </div>
       </div>
     </section>
 
     <section class="results" id="results">
-      <div class="grain grain-soft" aria-hidden="true"></div>
-      <div class="fiber" aria-hidden="true"></div>
       <div class="wrap">
         <header class="section-head">
+          <p class="label">On these streets</p>
           <h2>Results</h2>
-          <p class="sub">Sample case notes for layout — not published verdicts on this page.</p>
+          <p class="sub">Sample case notes for layout &mdash; not published verdicts on this page.</p>
         </header>
         <div class="result-grid">
           <article class="result result-lg">
@@ -233,7 +226,25 @@
 
   <footer class="site-footer" id="footer">
     <div class="wrap footer-inner">
-      <p><strong>Gower Legal</strong> · 1919 Pine Street, Uptown New Orleans · <a href="tel:+13402772799">340-277-2799</a></p>
+      <div class="footer-brand">
+        <img src="logo.png" width="220" height="72" alt="Gower Legal">
+        <p class="footer-addr">
+          <strong>Gower Legal</strong>
+          1919 Pine Street<br>
+          Uptown New Orleans
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <p class="label">Menu</p>
+        <a href="#practice">Practice Areas</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="footer-cta">
+        <p class="label">Contact</p>
+        <a class="footer-phone" href="tel:+13402772799">340-277-2799</a>
+        <a class="btn btn-primary" href="tel:+13402772799">Call Now</a>
+        <p class="footer-vi"><a href="https://gowerlegal.com/">Also serving the U.S. Virgin Islands</a></p>
+      </div>
     </div>
   </footer>
 
@@ -281,49 +292,54 @@
     ]
   }
   </script>
+
   <script>
     (function () {
       var header = document.querySelector(".site-header");
-      var hero = document.getElementById("top");
       function syncHeader() {
-        if (!header || !hero) return;
-        header.classList.toggle("is-scrolled", hero.getBoundingClientRect().bottom <= 88);
+        if (header) header.classList.toggle("is-scrolled", window.scrollY > 24);
       }
       window.addEventListener("scroll", syncHeader, { passive: true });
-      window.addEventListener("resize", syncHeader);
       syncHeader();
 
       var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       if (!reduceMotion && "IntersectionObserver" in window) {
-        var revealItems = document.querySelectorAll(
-          "main > section, .storm-gallery img, .circle, .about-media, .quote, .result"
-        );
-        revealItems.forEach(function (item, index) {
-          item.classList.add("reveal-item");
-          item.style.setProperty("--reveal-order", String(index % 5));
-        });
-        var revealObserver = new IntersectionObserver(function (entries, observer) {
+        var groups = [
+          document.querySelectorAll("main > section"),
+          document.querySelectorAll(".storm-gallery .frame"),
+          document.querySelectorAll(".circle"),
+          document.querySelectorAll(".about-media"),
+          document.querySelectorAll(".quote"),
+          document.querySelectorAll(".result")
+        ];
+        var observer = new IntersectionObserver(function (entries, obs) {
           entries.forEach(function (entry) {
             if (!entry.isIntersecting) return;
             entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
+            obs.unobserve(entry.target);
           });
-        }, { threshold: 0.14, rootMargin: "0px 0px -8% 0px" });
-        revealItems.forEach(function (item) { revealObserver.observe(item); });
+        }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+
+        groups.forEach(function (nodes) {
+          nodes.forEach(function (node, index) {
+            node.classList.add("reveal");
+            node.style.setProperty("--order", String(index));
+            observer.observe(node);
+          });
+        });
       }
 
       var root = document.querySelector("[data-carousel]");
       if (!root) return;
       var track = root.querySelector(".carousel-track");
-      var prev = root.querySelector(".prev");
-      var next = root.querySelector(".next");
-      function step(dir) {
+      function step(direction) {
         var card = track.querySelector(".quote");
         if (!card) return;
-        track.scrollBy({ left: dir * (card.getBoundingClientRect().width + 16), behavior: "smooth" });
+        var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        track.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap), behavior: "smooth" });
       }
-      prev.addEventListener("click", function () { step(-1); });
-      next.addEventListener("click", function () { step(1); });
+      root.querySelector(".prev").addEventListener("click", function () { step(-1); });
+      root.querySelector(".next").addEventListener("click", function () { step(1); });
     })();
   </script>
 </body>
