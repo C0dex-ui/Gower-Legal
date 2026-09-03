@@ -1,7 +1,7 @@
 ---
-version: 4.0
+version: 5.0
 name: Gower Legal homepage
-description: Wireframe-faithful Uptown New Orleans legal homepage with an editorial, boutique-firm finish.
+description: Wireframe-faithful, photo-first Uptown New Orleans homepage — maximalist inside eight slots.
 colors:
   ivory: "#F6F1E8"
   live-oak: "#2F4A3C"
@@ -26,10 +26,10 @@ Do not use Mardi Gras purple-green-gold, fleur-de-lis wallpaper, beads, masks, o
 ## Fixed section order
 
 1. Header — text wordmark with a brass rule and "Pine Street, Uptown"; Practice Areas, About, and Call Now right.
-2. Hero — centered heading, lede, and one Call Now button on warm ivory inside a brass inset rule. No hero photograph.
+2. Hero — full-bleed porch photograph, centered heading, lede, and one Call Now. Cream type on a dark oak veil. No split, cutout, or search bar.
 3. Storm Claims — left copy/CTA and two stacked square images on the right. The WordPress option `gower_storm_mode` toggles this section (`on` by default).
 4. Practice Areas — centered introduction and four circles: Car Wrecks, Slip and Fall, Rideshare, Trucking Accidents.
-5. About / Who You Are — copy and facts left, one square porch portrait right.
+5. About / Who You Are — copy and facts left, one square headshot right.
 6. Testimonials — centered heading, four review cards, previous/next arrows.
 7. Results — one tall lead tile left and four tiles in a 2×2 mosaic right.
 8. Footer — one simple full-width bar.
@@ -38,8 +38,8 @@ No additional pages or homepage sections.
 
 ## Photography
 
-- The owner porch photograph (`assets/hero-jacob-porch.png`, media key `hero`) is the About portrait. It is framed like a parlor portrait: ivory mat, thin brass rule, square crop toward the upper third.
-- The hero carries no photograph, per the wireframe.
+- The owner porch photograph (`assets/hero-jacob-porch.png`, media key `hero`) is the hero only.
+- The About square is the headshot (`assets/jacob-headshot.jpg`, media key `headshot`), framed like a parlor portrait.
 - Storm shows a brass-framed pair of squares.
 - Results pairs each figure with a real Uptown street, porch, streetcar, or storm image.
 

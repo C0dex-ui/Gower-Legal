@@ -1,7 +1,7 @@
 ﻿{
     "content":  [
                     {
-                        "id":  "8a36d9f",
+                        "id":  "77db841",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -28,7 +28,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "ca38ddb",
+                                             "id":  "63bc9c8",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -66,7 +66,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "6c5f84c",
+                                                                  "id":  "9f7e6b9",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -90,7 +90,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "5f87b63",
+                                                                                       "id":  "45aa632",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "html",
                                                                                        "isInner":  false,
@@ -112,7 +112,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "bc6b285",
+                                                                  "id":  "ec4b30e",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -136,7 +136,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "b7dc930",
+                                                                                       "id":  "e89d048",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "ha-navigation-menu",
                                                                                        "isInner":  false,
@@ -178,7 +178,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "3d1d478",
+                                                                  "id":  "e4c91a5",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -202,7 +202,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "bf1faeb",
+                                                                                       "id":  "33fe955",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "button",
                                                                                        "isInner":  false,

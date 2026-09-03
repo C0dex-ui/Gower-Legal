@@ -290,16 +290,20 @@ def build_home():
     hero = container({
         "content_width": "full",
         "flex_direction": "column",
-        "flex_justify_content": "center",
+        "flex_justify_content": "flex-end",
         "flex_align_items": "center",
-        "min_height": {"unit": "vh", "size": 70},
+        "min_height": {"unit": "vh", "size": 100},
         "background_background": "classic",
-        "background_color": PAPER,
+        "background_image": media("hero"),
+        "background_position": "center top",
+        "background_size": "cover",
+        "background_color": INK,
         "css_id": "top",
         "_css_classes": "gower-hero",
     }, [
+        widget("html", {"html": '<div class="gower-hero-veil" aria-hidden="true"></div>'}),
         container({
-            **boxed(800, padding=dim(72, 16, 72, 16, False)),
+            **boxed(800, padding=dim(0, 16, 88, 16, False)),
             "flex_direction": "column",
             "flex_align_items": "center",
             "flex_gap": gap(12),
@@ -308,7 +312,7 @@ def build_home():
             text("<p>Uptown · 1919 Pine Street</p>", SAND, 11, True, extra={"_css_classes": "gower-label gower-label-chip"}),
             heading(
                 "A New Orleans personal injury lawyer <em>who still sits on the porch.</em>",
-                "h1", TEAL_DEEP, 52, True,
+                "h1", "#FFFFFF", 52, True,
                 extra={
                     "typography_font_size_tablet": slider(36),
                     "typography_font_size_mobile": slider(26),
@@ -317,7 +321,7 @@ def build_home():
             ),
             text(
                 "<p>Gower Legal is Jacob Gower’s boutique on Pine Street in Uptown — call a neighbor, not a billboard.</p>",
-                MUTE, 17, True, extra={"_css_classes": "gower-lede"},
+                "rgba(246,241,232,0.9)", 17, True, extra={"_css_classes": "gower-lede"},
             ),
             btn("Call Now", PHONE),
         ], True),
@@ -413,7 +417,7 @@ def build_home():
                 btn("Learn More", "/#about", fill=INK, color=PAPER, hover_fill=TEAL_DEEP, hover_color=PAPER, css="gower-btn gower-btn-ink"),
             ], True),
             container({**col(50), "_css_classes": "gower-split-media gower-about-media"}, [
-                img("hero", "C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans"),
+                img("headshot", "C. Jacob Gower, New Orleans personal injury lawyer"),
             ], True),
         ], True),
     ])

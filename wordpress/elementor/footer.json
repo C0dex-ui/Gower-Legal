@@ -1,7 +1,7 @@
 ﻿{
     "content":  [
                     {
-                        "id":  "4554650",
+                        "id":  "e26a091",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -28,7 +28,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "b87f961",
+                                             "id":  "566558b",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -58,7 +58,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "de9cbda",
+                                                                  "id":  "24efbfb",
                                                                   "elType":  "widget",
                                                                   "widgetType":  "text-editor",
                                                                   "isInner":  false,

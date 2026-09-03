@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/hero-jacob-porch.png">
 </head>
 <body data-storm="on">
   <a class="skip" href="#main">Skip to content</a>
@@ -44,6 +45,9 @@
 
   <main id="main">
     <section class="hero" id="top">
+      <img class="hero-photo" src="assets/hero-jacob-porch.png" width="1600" height="900" alt="C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans">
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
       <div class="wrap hero-copy">
         <p class="label">Uptown · 1919 Pine Street</p>
         <h1>A New Orleans personal injury lawyer <em>who still sits on the porch.</em></h1>
@@ -131,7 +135,7 @@
           <a class="btn btn-ink" href="#about">Learn More</a>
         </div>
         <figure class="split-media about-media">
-          <img src="assets/hero-jacob-porch.png" width="1600" height="900" alt="C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans" loading="lazy">
+          <img src="assets/jacob-headshot.jpg" width="600" height="756" alt="C. Jacob Gower, New Orleans personal injury lawyer" loading="lazy">
         </figure>
       </div>
     </section>
@@ -279,6 +283,16 @@
   </script>
   <script>
     (function () {
+      var header = document.querySelector(".site-header");
+      var hero = document.getElementById("top");
+      function syncHeader() {
+        if (!header || !hero) return;
+        header.classList.toggle("is-scrolled", hero.getBoundingClientRect().bottom <= 88);
+      }
+      window.addEventListener("scroll", syncHeader, { passive: true });
+      window.addEventListener("resize", syncHeader);
+      syncHeader();
+
       var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       if (!reduceMotion && "IntersectionObserver" in window) {
         var revealItems = document.querySelectorAll(

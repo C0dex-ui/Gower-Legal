@@ -214,21 +214,25 @@ $footer = New-Container @{
 Save-El "footer" "Site Footer" "footer" @($footer)
 
 # Home
-$heroCopy = New-Container (Merge (Boxed 800 (Dim 72 16 72 16 $false)) @{
+$heroCopy = New-Container (Merge (Boxed 800 (Dim 0 16 88 16 $false)) @{
   flex_direction="column"; flex_align_items="center"; flex_gap=(Gap 12); _css_classes="gower-hero-copy"
 }) @(
   (New-Text "<p>Uptown $MIDDOT 1919 Pine Street</p>" $SAND 11 $true @{ _css_classes="gower-label gower-label-chip" })
-  (New-Heading "A New Orleans personal injury lawyer <em>who still sits on the porch.</em>" "h1" $TEAL_DEEP 52 $true $HEAD @{
+  (New-Heading "A New Orleans personal injury lawyer <em>who still sits on the porch.</em>" "h1" "#FFFFFF" 52 $true $HEAD @{
     typography_font_size_tablet=(Slider 36); typography_font_size_mobile=(Slider 26); typography_line_height=(Slider 1.12 "em")
   })
-  (New-Text "<p>Gower Legal is Jacob Gower's boutique on Pine Street in Uptown - call a neighbor, not a billboard.</p>" $MUTE 17 $true @{ _css_classes="gower-lede" })
+  (New-Text "<p>Gower Legal is Jacob Gower's boutique on Pine Street in Uptown - call a neighbor, not a billboard.</p>" "rgba(246,241,232,0.9)" 17 $true @{ _css_classes="gower-lede" })
   (New-Btn "Call Now" $PHONE)
 ) $true
 $hero = New-Container @{
-  content_width="full"; flex_direction="column"; flex_justify_content="center"; flex_align_items="center"
-  min_height=@{ unit="vh"; size=70 }
-  background_background="classic"; background_color=$PAPER; css_id="top"; _css_classes="gower-hero"
-} @($heroCopy)
+  content_width="full"; flex_direction="column"; flex_justify_content="flex-end"; flex_align_items="center"
+  min_height=@{ unit="vh"; size=100 }
+  background_background="classic"; background_image=(Media "hero"); background_position="center top"
+  background_size="cover"; background_color=$INK; css_id="top"; _css_classes="gower-hero"
+} @(
+  (New-Widget "html" @{ html='<div class="gower-hero-veil" aria-hidden="true"></div>' })
+  $heroCopy
+)
 
 $storm = New-Container @{
   content_width="full"; background_background="classic"; background_color=$TEAL_DEEP
@@ -285,7 +289,7 @@ $about = New-Container @{
       (New-Btn "Learn More" "/#about" $INK $PAPER $TEAL_DEEP $PAPER "gower-btn gower-btn-ink")
     ) $true)
     (New-Container (Merge (Col 50) @{ _css_classes="gower-split-media gower-about-media" }) @(
-      (New-Img "hero" "C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans")
+      (New-Img "headshot" "C. Jacob Gower, New Orleans personal injury lawyer")
     ) $true)
   ) $true)
 )
