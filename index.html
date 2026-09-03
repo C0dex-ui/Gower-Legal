@@ -8,16 +8,15 @@
   <link rel="canonical" href="https://gowerlegal.com/">
   <meta property="og:title" content="New Orleans Personal Injury Lawyer Help | Gower Legal">
   <meta property="og:description" content="Neighborly injury help from 1919 Pine Street. Car wrecks, slip and falls, rideshare, trucking, and Southern Louisiana storm claims.">
-  <meta property="og:image" content="assets/hero-jacob-porch.png">
+  <meta property="og:image" content="assets/result-porch.png">
   <meta property="og:type" content="website">
   <link rel="icon" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" as="image" href="assets/hero-jacob-porch.png">
 </head>
-<body>
+<body data-storm="on">
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -25,7 +24,7 @@
     <div class="fiber" aria-hidden="true"></div>
     <div class="wrap header-inner">
       <a class="brand" href="#top">
-        <img src="logo.png" width="220" height="56" alt="Gower Legal">
+        <span>Gower Legal</span>
       </a>
       <details class="nav-menu">
         <summary class="nav-toggle" aria-label="Open menu">Menu</summary>
@@ -44,10 +43,6 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <img class="hero-photo" src="assets/hero-jacob-porch.png" width="1600" height="900" alt="New Orleans personal injury lawyer on an Uptown porch in late light">
-      <div class="grain" aria-hidden="true"></div>
-      <div class="fiber" aria-hidden="true"></div>
-      <div class="hero-veil"></div>
       <div class="wrap hero-copy">
         <p class="label">Uptown · 1919 Pine Street</p>
         <h1>A New Orleans personal injury lawyer <em>who still sits on the porch.</em></h1>
@@ -66,9 +61,10 @@
           <p>When a hurricane hits the Gulf, this band comes on so you do not have to hunt. Jacob handles storm and hurricane property claims across Southern Louisiana.</p>
           <a class="btn btn-paper" href="tel:+13402772799">Call Now</a>
         </div>
-        <figure class="split-media">
+        <div class="storm-gallery" aria-label="Storm claims photographs">
           <img src="assets/storm-uptown-porch.png" width="900" height="900" alt="Wet Uptown New Orleans porch and oak limbs after a Gulf storm">
-        </figure>
+          <img src="assets/result-hurricane.png" width="600" height="600" alt="Blue tarp on an Uptown roof after a storm">
+        </div>
       </div>
     </section>
 
@@ -151,29 +147,29 @@
           <button class="chevron prev" type="button" aria-label="Previous testimonials">‹</button>
           <div class="carousel-track" tabindex="0">
             <article class="quote">
-              <img src="assets/result-porch.png" width="480" height="480" alt="" loading="lazy">
               <div class="quote-body">
+                <span aria-hidden="true">“</span>
                 <p>He called me back the same afternoon and talked like a neighbor, not a commercial.</p>
                 <p class="attr">Sample — Uptown resident</p>
               </div>
             </article>
             <article class="quote">
-              <img src="assets/practice-car-wrecks.png" width="480" height="480" alt="" loading="lazy">
               <div class="quote-body">
+                <span aria-hidden="true">“</span>
                 <p>I did not want a downtown firm. I wanted someone who knew the street I wrecked on.</p>
                 <p class="attr">Sample — Carrollton</p>
               </div>
             </article>
             <article class="quote">
-              <img src="assets/result-streetcar.png" width="480" height="480" alt="" loading="lazy">
               <div class="quote-body">
+                <span aria-hidden="true">“</span>
                 <p>The insurance emails stopped landing on me. That was the whole point of hiring him.</p>
                 <p class="attr">Sample — Mid-City</p>
               </div>
             </article>
             <article class="quote">
-              <img src="assets/storm-uptown-porch.png" width="480" height="480" alt="" loading="lazy">
               <div class="quote-body">
+                <span aria-hidden="true">“</span>
                 <p>After the storm he told us what to photograph before we pulled a single board.</p>
                 <p class="attr">Sample — Southern Louisiana</p>
               </div>
@@ -231,14 +227,8 @@
   </main>
 
   <footer class="site-footer" id="footer">
-    <div class="grain" aria-hidden="true"></div>
-    <div class="fiber" aria-hidden="true"></div>
     <div class="wrap footer-inner">
-      <p class="footer-brand">Gower Legal LLC</p>
-      <p class="footer-addr">C. Jacob Gower, Esq. · 1919 Pine St, New Orleans, LA 70118</p>
-      <p class="footer-contact"><a href="tel:+13402772799">340-277-2799</a><a href="mailto:jacob@gowerlegal.com">jacob@gowerlegal.com</a></p>
-      <p class="footer-close">If you need a New Orleans personal injury lawyer who will sit with the facts, call the Pine Street office.</p>
-      <p class="footer-vi"><a href="https://gowerlegal.com/">Also serving the U.S. Virgin Islands</a></p>
+      <p><strong>Gower Legal</strong> · 1919 Pine Street, Uptown New Orleans · <a href="tel:+13402772799">340-277-2799</a></p>
     </div>
   </footer>
 
@@ -288,18 +278,23 @@
   </script>
   <script>
     (function () {
-      var header = document.querySelector(".site-header");
-      var hero = document.getElementById("top");
-      function syncHeader() {
-        if (!header || !hero) return;
-        header.classList.toggle("is-scrolled", hero.getBoundingClientRect().bottom <= 72);
-      }
-      window.addEventListener("scroll", syncHeader, { passive: true });
-      window.addEventListener("resize", syncHeader);
-      syncHeader();
-      if (header && hero && "IntersectionObserver" in window) {
-        var io = new IntersectionObserver(function () { syncHeader(); }, { threshold: [0, 1] });
-        io.observe(hero);
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!reduceMotion && "IntersectionObserver" in window) {
+        var revealItems = document.querySelectorAll(
+          "main > section, .storm-gallery img, .circle, .about-media, .quote, .result"
+        );
+        revealItems.forEach(function (item, index) {
+          item.classList.add("reveal-item");
+          item.style.setProperty("--reveal-order", String(index % 5));
+        });
+        var revealObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.14, rootMargin: "0px 0px -8% 0px" });
+        revealItems.forEach(function (item) { revealObserver.observe(item); });
       }
 
       var root = document.querySelector("[data-carousel]");

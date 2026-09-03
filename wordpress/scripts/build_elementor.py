@@ -185,11 +185,7 @@ def section_head(title, sub, dark=False):
 
 
 def build_header():
-    brand_html = (
-        '<a class="gower-wordmark" href="/">'
-        '<span>Gower Legal</span><i aria-hidden="true"></i>'
-        "<small>Pine Street, Uptown</small></a>"
-    )
+    brand_html = '<a class="gower-wordmark" href="/"><span>Gower Legal</span><i aria-hidden="true"></i></a>'
     bar = container({
         **boxed(WRAP, padding=dim(8, 24, 8, 24, False)),
         "flex_direction": "row",
@@ -197,7 +193,7 @@ def build_header():
         "flex_align_items": "center",
         "flex_wrap": "nowrap",
         "flex_gap": gap(22),
-        "min_height": slider(94),
+        "min_height": slider(88),
         "background_background": "classic",
         "background_color": PAPER,
         "_css_classes": "gower-header-bar",
@@ -239,34 +235,17 @@ def build_header():
 
 def build_footer():
     inner = container({
-        **boxed(WRAP, padding=dim(64, 24, 40, 24, False)),
-        "flex_direction": "row",
-        "flex_align_items": "start",
-        "flex_justify_content": "space-between",
-        "flex_gap": gap(40),
+        **boxed(WRAP, padding=dim(28, 24, 28, 24, False)),
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_gap": gap(0),
         "_css_classes": "gower-footer-inner",
     }, [
-        container({**col(58), "_css_classes": "gower-footer-place", "flex_gap": gap(10)}, [
-            text("<p>Pine Street, Uptown</p>", SAND, 11, False, extra={"_css_classes": "gower-label"}),
-            heading("1919 Pine Street, Uptown New Orleans", "h2", PAPER, 36, False, extra={"_css_classes": "gower-footer-brand"}),
-            text("<p>C. Jacob Gower, Esq. · Gower Legal LLC</p>", "#d9d2c4", 14),
-        ], True),
-        container({**col(42), "_css_classes": "gower-footer-action", "flex_gap": gap(12)}, [
-            text(
-                '<p class="gower-footer-contact"><a href="tel:+13402772799">340-277-2799</a>'
-                '<a href="mailto:jacob@gowerlegal.com">jacob@gowerlegal.com</a></p>',
-                SAND, 18, False, extra={"_css_classes": "gower-footer-contact"},
-            ),
-            text(
-                "<p>If you need a New Orleans personal injury lawyer who will sit with the facts, call the Pine Street office.</p>",
-                "#d9d2c4", 15,
-            ),
-            btn("Call Now", PHONE, fill=BRICK, color="#ffffff", hover_fill=SAND, hover_color=INK, css="gower-btn gower-btn-brick"),
-            text(
-                '<p class="gower-footer-vi"><a href="https://gowerlegal.com/">Also serving the U.S. Virgin Islands</a></p>',
-                "#a9a69e", 13, False, extra={"_css_classes": "gower-footer-vi"},
-            ),
-        ], True),
+        text(
+            '<p><strong>Gower Legal</strong> · 1919 Pine Street, Uptown New Orleans · '
+            '<a href="tel:+13402772799">340-277-2799</a></p>',
+            PAPER, 14, True,
+        ),
     ], True)
     root = container({
         "content_width": "full",
@@ -278,21 +257,16 @@ def build_footer():
     save("footer", "Site Footer", "footer", [root])
 
 
-def practice_tile(key, label, line, alt, featured=False):
-    cls = "gower-practice-tile gower-practice-featured" if featured else "gower-practice-tile"
+def circle(key, label, alt):
     return container({
         "content_width": "full",
-        "_css_classes": cls,
+        "_css_classes": "gower-circle",
         "flex_direction": "column",
-        "flex_gap": gap(0),
+        "flex_align_items": "center",
+        "flex_gap": gap(12),
     }, [
-        container({"content_width": "full", "_css_classes": "gower-practice-media"}, [
-            img(key, alt),
-        ], True),
-        container({"content_width": "full", "_css_classes": "gower-practice-caption", "flex_gap": gap(5)}, [
-            heading(label, "h3", INK, 19),
-            text(f"<p>{line}</p>", MUTE, 14, extra={"_css_classes": "gower-practice-line"}),
-        ], True),
+        img(key, alt),
+        heading(label, "h3", INK, 17, True, family=BODY, extra={"typography_font_weight": "700"}),
     ], True)
 
 
@@ -316,20 +290,16 @@ def build_home():
     hero = container({
         "content_width": "full",
         "flex_direction": "column",
-        "flex_justify_content": "flex-end",
+        "flex_justify_content": "center",
         "flex_align_items": "center",
-        "min_height": {"unit": "vh", "size": 100},
+        "min_height": {"unit": "vh", "size": 70},
         "background_background": "classic",
-        "background_image": media("hero"),
-        "background_position": "center top",
-        "background_size": "cover",
-        "background_color": INK,
+        "background_color": PAPER,
         "css_id": "top",
         "_css_classes": "gower-hero",
     }, [
-        widget("html", {"html": '<div class="gower-hero-veil" aria-hidden="true"></div>'}),
         container({
-            **boxed(WRAP, padding=dim(0, 16, 76, 16, False)),
+            **boxed(800, padding=dim(72, 16, 72, 16, False)),
             "flex_direction": "column",
             "flex_align_items": "center",
             "flex_gap": gap(12),
@@ -338,7 +308,7 @@ def build_home():
             text("<p>Uptown · 1919 Pine Street</p>", SAND, 11, True, extra={"_css_classes": "gower-label gower-label-chip"}),
             heading(
                 "A New Orleans personal injury lawyer <em>who still sits on the porch.</em>",
-                "h1", WHITE, 52, True,
+                "h1", TEAL_DEEP, 52, True,
                 extra={
                     "typography_font_size_tablet": slider(36),
                     "typography_font_size_mobile": slider(26),
@@ -347,7 +317,7 @@ def build_home():
             ),
             text(
                 "<p>Gower Legal is Jacob Gower’s boutique on Pine Street in Uptown — call a neighbor, not a billboard.</p>",
-                "rgba(255,246,234,0.94)", 17, True, extra={"_css_classes": "gower-lede"},
+                MUTE, 17, True, extra={"_css_classes": "gower-lede"},
             ),
             btn("Call Now", PHONE),
         ], True),
@@ -362,18 +332,15 @@ def build_home():
         "padding": dim(72, 0, 72, 0, False),
     }, [
         container({
-            **boxed(1440, padding=dim(0, 0, 0, 0, True)),
+            **boxed(WRAP),
             "flex_direction": "row",
-            "flex_align_items": "stretch",
-            "flex_gap": gap(0),
+            "flex_align_items": "center",
+            "flex_gap": gap(48),
             "flex_direction_tablet": "column",
             "flex_direction_mobile": "column",
             "_css_classes": "gower-split",
         }, [
-            container({**col(58), "_css_classes": "gower-split-media gower-storm-media"}, [
-                img("storm", "Wet Uptown New Orleans porch and oak limbs after a Gulf storm"),
-            ], True),
-            container({**col(42), "_css_classes": "gower-split-copy gower-storm-copy", "flex_justify_content": "center", "flex_gap": gap(14)}, [
+            container({**col(50), "_css_classes": "gower-split-copy gower-storm-copy", "flex_justify_content": "center", "flex_gap": gap(14)}, [
                 text("<p>Southern Louisiana · after the storm</p>", SAND, 11, False, extra={"_css_classes": "gower-label"}),
                 heading("Storm Claims", "h2", "#FFFFFF", 40),
                 text(
@@ -381,6 +348,10 @@ def build_home():
                     "rgba(255,233,206,0.94)", 17,
                 ),
                 btn("Call Now", PHONE, fill=PAPER, color=TEAL_DEEP, css="gower-btn gower-btn-paper"),
+            ], True),
+            container({**col(50), "_css_classes": "gower-storm-gallery", "flex_gap": gap(16)}, [
+                img("storm", "Wet Uptown New Orleans porch and oak limbs after a Gulf storm"),
+                img("result-hurricane", "Blue tarp on an Uptown roof after a storm"),
             ], True),
         ], True),
     ])
@@ -398,22 +369,20 @@ def build_home():
             container({
                 "content_width": "full",
                 "flex_direction": "row",
-                "flex_gap": gap(18),
-                "_css_classes": "gower-practice-grid",
+                "flex_gap": gap(28),
+                "_css_classes": "gower-circles",
             }, [
-                practice_tile("practice-car", "Car Wrecks", "The street you take home.", "Cars along an oak-lined Uptown New Orleans avenue after a wreck", True),
-                practice_tile("practice-slip", "Slip and Fall", "The porch step and the wet walk.", "Wet cracked Uptown sidewalk under live oaks after rain"),
-                practice_tile("practice-rideshare", "Rideshare", "The ride across town.", "Rideshare sedan at the curb on a leafy Uptown residential street"),
-                practice_tile("practice-truck", "Trucking Accidents", "The delivery route through the neighborhood.", "Box truck on a wet New Orleans street near oak-lined blocks"),
-                practice_tile("storm", "Storm Claims", "The roof after the Gulf wind.", "Wet Uptown porch and oak limbs after a Gulf storm"),
+                circle("practice-car", "Car Wrecks", "Cars along an oak-lined Uptown New Orleans avenue after a wreck"),
+                circle("practice-slip", "Slip and Fall", "Wet cracked Uptown sidewalk under live oaks after rain"),
+                circle("practice-rideshare", "Rideshare", "Rideshare sedan at the curb on a leafy Uptown residential street"),
+                circle("practice-truck", "Trucking Accidents", "Box truck on a wet New Orleans street near oak-lined blocks"),
             ], True),
         ], True),
     ])
 
     facts = (
-        '<div class="gower-address-block"><span>Office</span>'
-        "<strong>1919 Pine Street</strong><small>Uptown New Orleans</small></div>"
         '<dl class="gower-facts">'
+        '<div class="gower-fact"><dt>Office</dt><dd>1919 Pine Street, Uptown New Orleans</dd></div>'
         '<div class="gower-fact"><dt>Education</dt><dd>LSU Law, 2012 — Magna Cum Laude, Order of the Coif</dd></div>'
         '<div class="gower-fact"><dt>Recognition</dt><dd>Rising Star, 2018–2025</dd></div>'
         "</dl>"
@@ -437,14 +406,14 @@ def build_home():
             "flex_direction_mobile": "column",
             "_css_classes": "gower-split",
         }, [
-            container({**col(55), "_css_classes": "gower-split-media gower-about-media"}, [
-                img("headshot", "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer"),
-            ], True),
-            container({**col(45), "_css_classes": "gower-split-copy", "flex_justify_content": "center", "flex_gap": gap(14)}, [
+            container({**col(50), "_css_classes": "gower-split-copy", "flex_justify_content": "center", "flex_gap": gap(14)}, [
                 text("<p>Who you are calling</p>", TEAL, 11, False, extra={"_css_classes": "gower-label"}),
                 heading("About / Who You Are", "h2", INK, 36),
                 widget("html", {"html": facts}),
                 btn("Learn More", "/#about", fill=INK, color=PAPER, hover_fill=TEAL_DEEP, hover_color=PAPER, css="gower-btn gower-btn-ink"),
+            ], True),
+            container({**col(50), "_css_classes": "gower-split-media gower-about-media"}, [
+                img("headshot", "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer"),
             ], True),
         ], True),
     ])
@@ -455,16 +424,16 @@ def build_home():
         '<div class="gower-carousel-track" tabindex="0">'
         '<article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span>'
         "<p>He called me back the same afternoon and talked like a neighbor, not a commercial.</p>"
-        '<p class="gower-attr">Uptown <small>Sample resident</small></p></div></article>'
+        '<p class="gower-attr">Sample - Uptown resident</p></div></article>'
         '<article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span>'
         "<p>I did not want a downtown firm. I wanted someone who knew the street I wrecked on.</p>"
-        '<p class="gower-attr">Carrollton <small>Sample resident</small></p></div></article>'
+        '<p class="gower-attr">Sample - Carrollton</p></div></article>'
         '<article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span>'
         "<p>The insurance emails stopped landing on me. That was the whole point of hiring him.</p>"
-        '<p class="gower-attr">Mid-City <small>Sample resident</small></p></div></article>'
+        '<p class="gower-attr">Sample - Mid-City</p></div></article>'
         '<article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span>'
         "<p>After the storm he told us what to photograph before we pulled a single board.</p>"
-        '<p class="gower-attr">Southern Louisiana <small>Sample resident</small></p></div></article>'
+        '<p class="gower-attr">Sample - Southern Louisiana</p></div></article>'
         "</div>"
         '<button class="gower-chevron next" type="button" aria-label="Next testimonials">&rsaquo;</button>'
         "</div>"
@@ -497,14 +466,27 @@ def build_home():
             container({
                 "content_width": "full",
                 "flex_direction": "row",
-                "flex_gap": gap(12),
+                "flex_gap": gap(8),
                 "flex_direction_tablet": "column",
                 "flex_direction_mobile": "column",
                 "_css_classes": "gower-result-grid",
             }, [
-                result_tile("result-streetcar", "$500,000 Recovered Following Auto Injury", "St. Charles streetcar under live oaks for a sample auto-injury result", True),
-                result_tile("result-hurricane", "$650,000 Recovered from Hurricane Damage", "Blue tarp on an Uptown roof after a storm"),
-                result_tile("result-porch", "$275,000 Slip and Fall", "Uptown porch used for a sample premises result"),
+                result_tile("practice-car", "$500,000 Recovered Following Auto Injury", "Uptown avenue still for a sample auto-injury result", True),
+                container({
+                    "content_width": "full",
+                    "width": slider(50, "%"),
+                    "width_tablet": slider(100, "%"),
+                    "width_mobile": slider(100, "%"),
+                    "_css_classes": "gower-result-quad",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": gap(8),
+                }, [
+                    result_tile("result-hurricane", "$650,000 Recovered from Hurricane Damage", "Blue tarp on an Uptown roof after a storm"),
+                    result_tile("practice-slip", "$275,000 Slip and Fall", "Wet Uptown sidewalk used as a sample premises result"),
+                    result_tile("result-streetcar", "$180,000 Rideshare Collision", "St. Charles streetcar under live oaks"),
+                    result_tile("practice-truck", "$420,000 Trucking Crash", "Box truck on a New Orleans street for a sample trucking result"),
+                ], True),
             ], True),
         ], True),
     ])

@@ -1,7 +1,7 @@
 ﻿{
     "content":  [
                     {
-                        "id":  "7b04c28",
+                        "id":  "5565b4b",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -28,7 +28,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "d963953",
+                                             "id":  "cda6d8a",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -47,7 +47,7 @@
                                                                           },
                                                               "min_height":  {
                                                                                  "unit":  "px",
-                                                                                 "size":  94
+                                                                                 "size":  88
                                                                              },
                                                               "flex_gap":  {
                                                                                "column":  "22",
@@ -66,7 +66,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "6f85860",
+                                                                  "id":  "1f3f48b",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -90,12 +90,12 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "8425f6f",
+                                                                                       "id":  "176ecb7",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "html",
                                                                                        "isInner":  false,
                                                                                        "settings":  {
-                                                                                                        "html":  "\u003ca class=\"gower-wordmark\" href=\"/\"\u003e\u003cspan\u003eGower Legal\u003c/span\u003e\u003ci aria-hidden=\"true\"\u003e\u003c/i\u003e\u003csmall\u003ePine Street, Uptown\u003c/small\u003e\u003c/a\u003e",
+                                                                                                        "html":  "\u003ca class=\"gower-wordmark\" href=\"/\"\u003e\u003cspan\u003eGower Legal\u003c/span\u003e\u003ci aria-hidden=\"true\"\u003e\u003c/i\u003e\u003c/a\u003e",
                                                                                                         "_margin":  {
                                                                                                                         "unit":  "px",
                                                                                                                         "top":  "0",
@@ -112,7 +112,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "064037c",
+                                                                  "id":  "91cd177",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -136,7 +136,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "ed707c1",
+                                                                                       "id":  "0346524",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "ha-navigation-menu",
                                                                                        "isInner":  false,
@@ -178,7 +178,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "b699bba",
+                                                                  "id":  "92ba0b6",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -202,7 +202,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "a9501b6",
+                                                                                       "id":  "45cb0df",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "button",
                                                                                        "isInner":  false,

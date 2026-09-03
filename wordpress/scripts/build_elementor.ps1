@@ -147,16 +147,10 @@ function Section-Head($title, $sub, $dark=$false) {
   ) $true
 }
 
-function New-PracticeTile($key, $label, $line, $alt, $featured=$false) {
-  $cls = if ($featured) { "gower-practice-tile gower-practice-featured" } else { "gower-practice-tile" }
-  New-Container (@{ content_width="full"; _css_classes=$cls; flex_direction="column"; flex_gap=(Gap 0) }) @(
-    (New-Container @{ content_width="full"; _css_classes="gower-practice-media" } @(
-      (New-Img $key $alt)
-    ) $true)
-    (New-Container @{ content_width="full"; _css_classes="gower-practice-caption"; flex_gap=(Gap 5) } @(
-      (New-Heading $label "h3" $INK 19 $false $HEAD)
-      (New-Text "<p>$line</p>" $MUTE 14 $false @{ _css_classes="gower-practice-line" })
-    ) $true)
+function New-Circle($key, $label, $alt) {
+  New-Container (@{ content_width="full"; _css_classes="gower-circle"; flex_direction="column"; flex_align_items="center"; flex_gap=(Gap 12) }) @(
+    (New-Img $key $alt)
+    (New-Heading $label "h3" $INK 17 $true $BODY)
   ) $true
 }
 
@@ -174,10 +168,10 @@ function New-Result($key, $title, $alt, $large=$false) {
 }
 
 # Header
-$brandHtml = '<a class="gower-wordmark" href="/"><span>Gower Legal</span><i aria-hidden="true"></i><small>Pine Street, Uptown</small></a>'
+$brandHtml = '<a class="gower-wordmark" href="/"><span>Gower Legal</span><i aria-hidden="true"></i></a>'
 $barSettings = Merge (Boxed 1200 (Dim 8 24 8 24 $false)) @{
   flex_direction="row"; flex_justify_content="space-between"; flex_align_items="center"
-  flex_wrap="nowrap"; flex_gap=(Gap 22); min_height=(Slider 94)
+  flex_wrap="nowrap"; flex_gap=(Gap 22); min_height=(Slider 88)
   background_background="classic"; background_color=$PAPER; _css_classes="gower-header-bar"
 }
 $bar = New-Container $barSettings @(
@@ -208,20 +202,10 @@ $header = New-Container @{
 Save-El "header" "Site Header" "header" @($header)
 
 # Footer
-$footerInner = New-Container (Merge (Boxed 1200 (Dim 64 24 40 24 $false)) @{
-  flex_direction="row"; flex_align_items="start"; flex_justify_content="space-between"; flex_gap=(Gap 40); _css_classes="gower-footer-inner"
+$footerInner = New-Container (Merge (Boxed 1200 (Dim 28 24 28 24 $false)) @{
+  flex_direction="column"; flex_align_items="center"; flex_gap=(Gap 0); _css_classes="gower-footer-inner"
 }) @(
-  (New-Container (Merge (Col 58) @{ _css_classes="gower-footer-place"; flex_gap=(Gap 10) }) @(
-    (New-Text "<p>Pine Street, Uptown</p>" $SAND 11 $false @{ _css_classes="gower-label" })
-    (New-Heading "1919 Pine Street, Uptown New Orleans" "h2" $PAPER 36 $false $HEAD @{ _css_classes="gower-footer-brand" })
-    (New-Text "<p>C. Jacob Gower, Esq. $MIDDOT Gower Legal LLC</p>" "#d9d2c4" 14 $false)
-  ) $true)
-  (New-Container (Merge (Col 42) @{ _css_classes="gower-footer-action"; flex_gap=(Gap 12) }) @(
-    (New-Text '<p class="gower-footer-contact"><a href="tel:+13402772799">340-277-2799</a><a href="mailto:jacob@gowerlegal.com">jacob@gowerlegal.com</a></p>' $SAND 18 $false @{ _css_classes="gower-footer-contact" })
-    (New-Text "<p>If you need a New Orleans personal injury lawyer who will sit with the facts, call the Pine Street office.</p>" "#d9d2c4" 15 $false)
-    (New-Btn "Call Now" $PHONE $BRICK "#ffffff" $SAND $INK "gower-btn gower-btn-brick")
-    (New-Text '<p class="gower-footer-vi"><a href="https://gowerlegal.com/">Also serving the U.S. Virgin Islands</a></p>' "#a9a69e" 13 $false @{ _css_classes="gower-footer-vi" })
-  ) $true)
+  (New-Text "<p><strong>Gower Legal</strong> $MIDDOT 1919 Pine Street, Uptown New Orleans $MIDDOT <a href=`"tel:+13402772799`">340-277-2799</a></p>" $PAPER 14 $true)
 ) $true
 $footer = New-Container @{
   content_width="full"; background_background="classic"; background_color=$INK
@@ -230,42 +214,39 @@ $footer = New-Container @{
 Save-El "footer" "Site Footer" "footer" @($footer)
 
 # Home
-$heroCopy = New-Container (Merge (Boxed 1200 (Dim 0 16 76 16 $false)) @{
+$heroCopy = New-Container (Merge (Boxed 800 (Dim 72 16 72 16 $false)) @{
   flex_direction="column"; flex_align_items="center"; flex_gap=(Gap 12); _css_classes="gower-hero-copy"
 }) @(
   (New-Text "<p>Uptown $MIDDOT 1919 Pine Street</p>" $SAND 11 $true @{ _css_classes="gower-label gower-label-chip" })
-  (New-Heading "A New Orleans personal injury lawyer <em>who still sits on the porch.</em>" "h1" "#FFFFFF" 52 $true $HEAD @{
+  (New-Heading "A New Orleans personal injury lawyer <em>who still sits on the porch.</em>" "h1" $TEAL_DEEP 52 $true $HEAD @{
     typography_font_size_tablet=(Slider 36); typography_font_size_mobile=(Slider 26); typography_line_height=(Slider 1.12 "em")
   })
-  (New-Text "<p>Gower Legal is Jacob Gower's boutique on Pine Street in Uptown - call a neighbor, not a billboard.</p>" "rgba(255,246,234,0.94)" 17 $true @{ _css_classes="gower-lede" })
+  (New-Text "<p>Gower Legal is Jacob Gower's boutique on Pine Street in Uptown - call a neighbor, not a billboard.</p>" $MUTE 17 $true @{ _css_classes="gower-lede" })
   (New-Btn "Call Now" $PHONE)
 ) $true
 $hero = New-Container @{
-  content_width="full"; flex_direction="column"; flex_justify_content="flex-end"; flex_align_items="center"
-  min_height=@{ unit="vh"; size=100 }
-  background_background="classic"; background_image=(Media "hero"); background_position="center top"
-  background_size="cover"; background_color=$INK; css_id="top"; _css_classes="gower-hero"
-} @(
-  (New-Widget "html" @{ html='<div class="gower-hero-veil" aria-hidden="true"></div>' })
-  $heroCopy
-)
+  content_width="full"; flex_direction="column"; flex_justify_content="center"; flex_align_items="center"
+  min_height=@{ unit="vh"; size=70 }
+  background_background="classic"; background_color=$PAPER; css_id="top"; _css_classes="gower-hero"
+} @($heroCopy)
 
 $storm = New-Container @{
   content_width="full"; background_background="classic"; background_color=$TEAL_DEEP
   css_id="storm"; _css_classes="gower-storm"; padding=(Dim 72 0 72 0 $false)
 } @(
-  (New-Container (Merge (Boxed 1440 (Dim 0 0 0 0 $true)) @{
-    flex_direction="row"; flex_align_items="stretch"; flex_gap=(Gap 0)
+  (New-Container (Merge (Boxed) @{
+    flex_direction="row"; flex_align_items="center"; flex_gap=(Gap 48)
     flex_direction_tablet="column"; flex_direction_mobile="column"; _css_classes="gower-split"
   }) @(
-    (New-Container (Merge (Col 58) @{ _css_classes="gower-split-media gower-storm-media" }) @(
-      (New-Img "storm" "Wet Uptown New Orleans porch and oak limbs after a Gulf storm")
-    ) $true)
-    (New-Container (Merge (Col 42) @{ _css_classes="gower-split-copy gower-storm-copy"; flex_justify_content="center"; flex_gap=(Gap 14) }) @(
+    (New-Container (Merge (Col 50) @{ _css_classes="gower-split-copy gower-storm-copy"; flex_justify_content="center"; flex_gap=(Gap 14) }) @(
       (New-Text "<p>Southern Louisiana $MIDDOT after the storm</p>" $SAND 11 $false @{ _css_classes="gower-label" })
       (New-Heading "Storm Claims" "h2" "#FFFFFF" 40)
       (New-Text "<p>When a hurricane hits the Gulf, this band comes on so you do not have to hunt. Jacob handles storm and hurricane property claims across Southern Louisiana.</p>" "rgba(255,233,206,0.94)" 17)
       (New-Btn "Call Now" $PHONE $PAPER $TEAL_DEEP $SAND $INK "gower-btn gower-btn-paper")
+    ) $true)
+    (New-Container (Merge (Col 50) @{ _css_classes="gower-storm-gallery"; flex_gap=(Gap 16) }) @(
+      (New-Img "storm" "Wet Uptown New Orleans porch and oak limbs after a Gulf storm")
+      (New-Img "result-hurricane" "Blue tarp on an Uptown roof after a storm")
     ) $true)
   ) $true)
 )
@@ -277,18 +258,17 @@ $practice = New-Container @{
   (New-Container (Merge (Boxed) @{ flex_gap=(Gap 28) }) @(
     (Section-Head "Practice Areas" "The same streets you drive. These are the matters we take in New Orleans.")
     (New-Container @{
-      content_width="full"; flex_direction="row"; flex_gap=(Gap 18); _css_classes="gower-practice-grid"
+      content_width="full"; flex_direction="row"; flex_gap=(Gap 28); _css_classes="gower-circles"
     } @(
-      (New-PracticeTile "practice-car" "Car Wrecks" "The street you take home." "Cars along an oak-lined Uptown New Orleans avenue after a wreck" $true)
-      (New-PracticeTile "practice-slip" "Slip and Fall" "The porch step and the wet walk." "Wet cracked Uptown sidewalk under live oaks after rain")
-      (New-PracticeTile "practice-rideshare" "Rideshare" "The ride across town." "Rideshare sedan at the curb on a leafy Uptown residential street")
-      (New-PracticeTile "practice-truck" "Trucking Accidents" "The delivery route through the neighborhood." "Box truck on a wet New Orleans street near oak-lined blocks")
-      (New-PracticeTile "storm" "Storm Claims" "The roof after the Gulf wind." "Wet Uptown porch and oak limbs after a Gulf storm")
+      (New-Circle "practice-car" "Car Wrecks" "Cars along an oak-lined Uptown New Orleans avenue after a wreck")
+      (New-Circle "practice-slip" "Slip and Fall" "Wet cracked Uptown sidewalk under live oaks after rain")
+      (New-Circle "practice-rideshare" "Rideshare" "Rideshare sedan at the curb on a leafy Uptown residential street")
+      (New-Circle "practice-truck" "Trucking Accidents" "Box truck on a wet New Orleans street near oak-lined blocks")
     ) $true)
   ) $true)
 )
 
-$facts = '<div class="gower-address-block"><span>Office</span><strong>1919 Pine Street</strong><small>Uptown New Orleans</small></div><dl class="gower-facts"><div class="gower-fact"><dt>Education</dt><dd>LSU Law, 2012 - Magna Cum Laude, Order of the Coif</dd></div><div class="gower-fact"><dt>Recognition</dt><dd>Rising Star, 2018-2025</dd></div></dl><p class="gower-about-close">You talk to the lawyer who handles the file.</p>'
+$facts = '<dl class="gower-facts"><div class="gower-fact"><dt>Office</dt><dd>1919 Pine Street, Uptown New Orleans</dd></div><div class="gower-fact"><dt>Education</dt><dd>LSU Law, 2012 - Magna Cum Laude, Order of the Coif</dd></div><div class="gower-fact"><dt>Recognition</dt><dd>Rising Star, 2018-2025</dd></div></dl><p class="gower-about-close">You talk to the lawyer who handles the file.</p>'
 
 $about = New-Container @{
   content_width="full"; background_background="classic"; background_color=$PAPER
@@ -298,19 +278,19 @@ $about = New-Container @{
     flex_direction="row"; flex_align_items="stretch"; flex_gap=(Gap 40)
     flex_direction_tablet="column"; flex_direction_mobile="column"; _css_classes="gower-split"
   }) @(
-    (New-Container (Merge (Col 55) @{ _css_classes="gower-split-media gower-about-media" }) @(
-      (New-Img "headshot" "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer")
-    ) $true)
-    (New-Container (Merge (Col 45) @{ _css_classes="gower-split-copy"; flex_justify_content="center"; flex_gap=(Gap 14) }) @(
+    (New-Container (Merge (Col 50) @{ _css_classes="gower-split-copy"; flex_justify_content="center"; flex_gap=(Gap 14) }) @(
       (New-Text "<p>Who you are calling</p>" $TEAL 11 $false @{ _css_classes="gower-label" })
       (New-Heading "About / Who You Are" "h2" $INK 36)
       (New-Widget "html" @{ html=$facts })
       (New-Btn "Learn More" "/#about" $INK $PAPER $TEAL_DEEP $PAPER "gower-btn gower-btn-ink")
     ) $true)
+    (New-Container (Merge (Col 50) @{ _css_classes="gower-split-media gower-about-media" }) @(
+      (New-Img "headshot" "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer")
+    ) $true)
   ) $true)
 )
 
-$quotesHtml = '<div class="gower-carousel" data-gower-carousel><button class="gower-chevron prev" type="button" aria-label="Previous testimonials">&lsaquo;</button><div class="gower-carousel-track" tabindex="0"><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>He called me back the same afternoon and talked like a neighbor, not a commercial.</p><p class="gower-attr">Uptown <small>Sample resident</small></p></div></article><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>I did not want a downtown firm. I wanted someone who knew the street I wrecked on.</p><p class="gower-attr">Carrollton <small>Sample resident</small></p></div></article><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>The insurance emails stopped landing on me. That was the whole point of hiring him.</p><p class="gower-attr">Mid-City <small>Sample resident</small></p></div></article><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>After the storm he told us what to photograph before we pulled a single board.</p><p class="gower-attr">Southern Louisiana <small>Sample resident</small></p></div></article></div><button class="gower-chevron next" type="button" aria-label="Next testimonials">&rsaquo;</button></div>'
+$quotesHtml = '<div class="gower-carousel" data-gower-carousel><button class="gower-chevron prev" type="button" aria-label="Previous testimonials">&lsaquo;</button><div class="gower-carousel-track" tabindex="0"><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>He called me back the same afternoon and talked like a neighbor, not a commercial.</p><p class="gower-attr">Sample - Uptown resident</p></div></article><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>I did not want a downtown firm. I wanted someone who knew the street I wrecked on.</p><p class="gower-attr">Sample - Carrollton</p></div></article><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>The insurance emails stopped landing on me. That was the whole point of hiring him.</p><p class="gower-attr">Sample - Mid-City</p></div></article><article class="gower-quote"><div class="gower-quote-body"><span aria-hidden="true">&ldquo;</span><p>After the storm he told us what to photograph before we pulled a single board.</p><p class="gower-attr">Sample - Southern Louisiana</p></div></article></div><button class="gower-chevron next" type="button" aria-label="Next testimonials">&rsaquo;</button></div>'
 
 $quotes = New-Container @{
   content_width="full"; background_background="classic"; background_color=$INK
@@ -332,9 +312,16 @@ $results = New-Container @{
       content_width="full"; flex_direction="row"; flex_gap=(Gap 12)
       flex_direction_tablet="column"; flex_direction_mobile="column"; _css_classes="gower-result-grid"
     } @(
-      (New-Result "result-streetcar" '$500,000 Recovered Following Auto Injury' "St. Charles streetcar under live oaks for a sample auto-injury result" $true)
-      (New-Result "result-hurricane" '$650,000 Recovered from Hurricane Damage' "Blue tarp on an Uptown roof after a storm")
-      (New-Result "result-porch" '$275,000 Slip and Fall' "Uptown porch used for a sample premises result")
+      (New-Result "practice-car" '$500,000 Recovered Following Auto Injury' "Uptown avenue still for a sample auto-injury result" $true)
+      (New-Container @{
+        content_width="full"; width=(Slider 50 "%"); width_tablet=(Slider 100 "%"); width_mobile=(Slider 100 "%")
+        _css_classes="gower-result-quad"; flex_direction="row"; flex_wrap="wrap"; flex_gap=(Gap 8)
+      } @(
+        (New-Result "result-hurricane" '$650,000 Recovered from Hurricane Damage' "Blue tarp on an Uptown roof after a storm")
+        (New-Result "practice-slip" '$275,000 Slip and Fall' "Wet Uptown sidewalk used as a sample premises result")
+        (New-Result "result-streetcar" '$180,000 Rideshare Collision' "St. Charles streetcar under live oaks")
+        (New-Result "practice-truck" '$420,000 Trucking Crash' "Box truck on a New Orleans street for a sample trucking result")
+      ) $true)
     ) $true)
   ) $true)
 )
