@@ -1,7 +1,7 @@
 ﻿{
     "content":  [
                     {
-                        "id":  "ea9de5a",
+                        "id":  "6ac07da",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -30,7 +30,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "7cd56b9",
+                                             "id":  "5181878",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -60,7 +60,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "c70d92a",
+                                                                  "id":  "00123d2",
                                                                   "elType":  "widget",
                                                                   "widgetType":  "text-editor",
                                                                   "isInner":  false,
@@ -94,7 +94,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "44a5985",
+                                                                  "id":  "2c2662b",
                                                                   "elType":  "widget",
                                                                   "widgetType":  "heading",
                                                                   "isInner":  false,
@@ -136,7 +136,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "dfb2ca5",
+                                                                  "id":  "6ea3f1f",
                                                                   "elType":  "widget",
                                                                   "widgetType":  "text-editor",
                                                                   "isInner":  false,
@@ -170,7 +170,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "567e86d",
+                                                                  "id":  "a6c3ada",
                                                                   "elType":  "widget",
                                                                   "widgetType":  "button",
                                                                   "isInner":  false,
@@ -233,7 +233,7 @@
                                      ]
                     },
                     {
-                        "id":  "695eb2c",
+                        "id":  "07ee659",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -256,7 +256,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "e5f210b",
+                                             "id":  "bf85a36",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -288,7 +288,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "0da537c",
+                                                                  "id":  "b8aacb2",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -326,7 +326,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "420fda2",
+                                                                                       "id":  "e8d2320",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "text-editor",
                                                                                        "isInner":  false,
@@ -360,7 +360,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "752db4f",
+                                                                                       "id":  "7e6ec18",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "heading",
                                                                                        "isInner":  false,
@@ -394,7 +394,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "1415419",
+                                                                                       "id":  "a432139",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "text-editor",
                                                                                        "isInner":  false,
@@ -427,7 +427,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "5386fc8",
+                                                                                       "id":  "0609c39",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "button",
                                                                                        "isInner":  false,
@@ -488,7 +488,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "b5b57cb",
+                                                                  "id":  "2dda80f",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -525,7 +525,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "c4210db",
+                                                                                       "id":  "21a7d4b",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "image",
                                                                                        "isInner":  false,
@@ -552,7 +552,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "661a478",
+                                                                                       "id":  "3090a72",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "image",
                                                                                        "isInner":  false,
@@ -585,7 +585,7 @@
                                      ]
                     },
                     {
-                        "id":  "9449d7c",
+                        "id":  "9004cf1",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -608,7 +608,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "2271541",
+                                             "id":  "b550fc1",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -635,7 +635,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "daa9000",
+                                                                  "id":  "460b2e5",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -654,7 +654,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "00fcfa2",
+                                                                                       "id":  "3ff449c",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "heading",
                                                                                        "isInner":  false,
@@ -688,7 +688,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "f3044cf",
+                                                                                       "id":  "1458af7",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "text-editor",
                                                                                        "isInner":  false,
@@ -724,7 +724,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "4b0f336",
+                                                                  "id":  "fa60feb",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -749,7 +749,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "bdeb336",
+                                                                                       "id":  "792710a",
                                                                                        "elType":  "container",
                                                                                        "isInner":  true,
                                                                                        "settings":  {
@@ -775,7 +775,7 @@
                                                                                                     },
                                                                                        "elements":  [
                                                                                                         {
-                                                                                                            "id":  "d7b8912",
+                                                                                                            "id":  "2b2b40e",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "image",
                                                                                                             "isInner":  false,
@@ -802,7 +802,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "4f68a15",
+                                                                                                            "id":  "672409e",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "heading",
                                                                                                             "isInner":  false,
@@ -838,7 +838,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "aaea0f2",
+                                                                                       "id":  "09bc29a",
                                                                                        "elType":  "container",
                                                                                        "isInner":  true,
                                                                                        "settings":  {
@@ -864,7 +864,7 @@
                                                                                                     },
                                                                                        "elements":  [
                                                                                                         {
-                                                                                                            "id":  "66bb940",
+                                                                                                            "id":  "51b9de1",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "image",
                                                                                                             "isInner":  false,
@@ -891,7 +891,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "cd2ebfa",
+                                                                                                            "id":  "632bec7",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "heading",
                                                                                                             "isInner":  false,
@@ -927,7 +927,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "e0f35ca",
+                                                                                       "id":  "dda453b",
                                                                                        "elType":  "container",
                                                                                        "isInner":  true,
                                                                                        "settings":  {
@@ -953,7 +953,7 @@
                                                                                                     },
                                                                                        "elements":  [
                                                                                                         {
-                                                                                                            "id":  "09cc69e",
+                                                                                                            "id":  "7a82f7e",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "image",
                                                                                                             "isInner":  false,
@@ -980,7 +980,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "61351c0",
+                                                                                                            "id":  "d69fe62",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "heading",
                                                                                                             "isInner":  false,
@@ -1016,7 +1016,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "a42ff9b",
+                                                                                       "id":  "d1f7a21",
                                                                                        "elType":  "container",
                                                                                        "isInner":  true,
                                                                                        "settings":  {
@@ -1042,7 +1042,7 @@
                                                                                                     },
                                                                                        "elements":  [
                                                                                                         {
-                                                                                                            "id":  "acd0df8",
+                                                                                                            "id":  "f020a29",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "image",
                                                                                                             "isInner":  false,
@@ -1069,7 +1069,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "92e62fe",
+                                                                                                            "id":  "d298fbf",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "heading",
                                                                                                             "isInner":  false,
@@ -1111,7 +1111,7 @@
                                      ]
                     },
                     {
-                        "id":  "45b461b",
+                        "id":  "4c486bc",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -1134,7 +1134,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "995272c",
+                                             "id":  "a2f0b50",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -1166,7 +1166,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "fb28656",
+                                                                  "id":  "5fde4c6",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -1204,7 +1204,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "74c931d",
+                                                                                       "id":  "b69dd01",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "text-editor",
                                                                                        "isInner":  false,
@@ -1238,7 +1238,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "573e5fb",
+                                                                                       "id":  "59034a9",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "heading",
                                                                                        "isInner":  false,
@@ -1272,7 +1272,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "3aa894f",
+                                                                                       "id":  "38e7095",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "html",
                                                                                        "isInner":  false,
@@ -1292,7 +1292,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "38292a0",
+                                                                                       "id":  "2728f64",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "button",
                                                                                        "isInner":  false,
@@ -1353,7 +1353,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "bc37b66",
+                                                                  "id":  "1d9f78e",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -1384,19 +1384,19 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "cb0c515",
+                                                                                       "id":  "c2b4cbb",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "image",
                                                                                        "isInner":  false,
                                                                                        "settings":  {
                                                                                                         "image":  {
-                                                                                                                      "url":  "{{media_url:headshot}}",
-                                                                                                                      "id":  "{{media:headshot}}",
-                                                                                                                      "alt":  "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer",
+                                                                                                                      "url":  "{{media_url:hero}}",
+                                                                                                                      "id":  "{{media:hero}}",
+                                                                                                                      "alt":  "C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans",
                                                                                                                       "source":  "library"
                                                                                                                   },
                                                                                                         "image_size":  "full",
-                                                                                                        "alt_text":  "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer",
+                                                                                                        "alt_text":  "C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans",
                                                                                                         "_margin":  {
                                                                                                                         "unit":  "px",
                                                                                                                         "top":  "0",
@@ -1417,7 +1417,7 @@
                                      ]
                     },
                     {
-                        "id":  "c44e319",
+                        "id":  "4884c5f",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -1440,7 +1440,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "dc46759",
+                                             "id":  "2d96d91",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -1467,7 +1467,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "afe09d1",
+                                                                  "id":  "5ebda71",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -1486,7 +1486,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "10b5dc4",
+                                                                                       "id":  "7b135d0",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "heading",
                                                                                        "isInner":  false,
@@ -1520,7 +1520,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "eb70c57",
+                                                                                       "id":  "1b2a3aa",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "text-editor",
                                                                                        "isInner":  false,
@@ -1556,7 +1556,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "124f1cb",
+                                                                  "id":  "6390670",
                                                                   "elType":  "widget",
                                                                   "widgetType":  "html",
                                                                   "isInner":  false,
@@ -1580,7 +1580,7 @@
                                      ]
                     },
                     {
-                        "id":  "3f754c9",
+                        "id":  "1cac322",
                         "elType":  "container",
                         "isInner":  false,
                         "settings":  {
@@ -1603,7 +1603,7 @@
                                      },
                         "elements":  [
                                          {
-                                             "id":  "b3d5638",
+                                             "id":  "faddad3",
                                              "elType":  "container",
                                              "isInner":  true,
                                              "settings":  {
@@ -1630,7 +1630,7 @@
                                                           },
                                              "elements":  [
                                                               {
-                                                                  "id":  "855bb10",
+                                                                  "id":  "c7615a8",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -1649,7 +1649,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "eab659f",
+                                                                                       "id":  "2f226e1",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "heading",
                                                                                        "isInner":  false,
@@ -1683,7 +1683,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "a3c94e3",
+                                                                                       "id":  "690d216",
                                                                                        "elType":  "widget",
                                                                                        "widgetType":  "text-editor",
                                                                                        "isInner":  false,
@@ -1719,7 +1719,7 @@
                                                                                ]
                                                               },
                                                               {
-                                                                  "id":  "fc7c98d",
+                                                                  "id":  "d3af593",
                                                                   "elType":  "container",
                                                                   "isInner":  true,
                                                                   "settings":  {
@@ -1746,7 +1746,7 @@
                                                                                },
                                                                   "elements":  [
                                                                                    {
-                                                                                       "id":  "c7d870a",
+                                                                                       "id":  "32e5095",
                                                                                        "elType":  "container",
                                                                                        "isInner":  true,
                                                                                        "settings":  {
@@ -1770,7 +1770,7 @@
                                                                                                     },
                                                                                        "elements":  [
                                                                                                         {
-                                                                                                            "id":  "b22da4c",
+                                                                                                            "id":  "f8c5c10",
                                                                                                             "elType":  "widget",
                                                                                                             "widgetType":  "image",
                                                                                                             "isInner":  false,
@@ -1797,7 +1797,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "9b8e7fc",
+                                                                                                            "id":  "0e641d6",
                                                                                                             "elType":  "container",
                                                                                                             "isInner":  true,
                                                                                                             "settings":  {
@@ -1816,7 +1816,7 @@
                                                                                                                          },
                                                                                                             "elements":  [
                                                                                                                              {
-                                                                                                                                 "id":  "858a212",
+                                                                                                                                 "id":  "4b76797",
                                                                                                                                  "elType":  "widget",
                                                                                                                                  "widgetType":  "heading",
                                                                                                                                  "isInner":  false,
@@ -1854,7 +1854,7 @@
                                                                                                     ]
                                                                                    },
                                                                                    {
-                                                                                       "id":  "b0b6ef3",
+                                                                                       "id":  "5abc8f8",
                                                                                        "elType":  "container",
                                                                                        "isInner":  true,
                                                                                        "settings":  {
@@ -1892,7 +1892,7 @@
                                                                                                     },
                                                                                        "elements":  [
                                                                                                         {
-                                                                                                            "id":  "8c74f9c",
+                                                                                                            "id":  "738847a",
                                                                                                             "elType":  "container",
                                                                                                             "isInner":  true,
                                                                                                             "settings":  {
@@ -1916,7 +1916,7 @@
                                                                                                                          },
                                                                                                             "elements":  [
                                                                                                                              {
-                                                                                                                                 "id":  "24f750d",
+                                                                                                                                 "id":  "1e3afe8",
                                                                                                                                  "elType":  "widget",
                                                                                                                                  "widgetType":  "image",
                                                                                                                                  "isInner":  false,
@@ -1943,7 +1943,7 @@
                                                                                                                                               ]
                                                                                                                              },
                                                                                                                              {
-                                                                                                                                 "id":  "d45adad",
+                                                                                                                                 "id":  "ae94293",
                                                                                                                                  "elType":  "container",
                                                                                                                                  "isInner":  true,
                                                                                                                                  "settings":  {
@@ -1962,7 +1962,7 @@
                                                                                                                                               },
                                                                                                                                  "elements":  [
                                                                                                                                                   {
-                                                                                                                                                      "id":  "0dbb71d",
+                                                                                                                                                      "id":  "660f4c9",
                                                                                                                                                       "elType":  "widget",
                                                                                                                                                       "widgetType":  "heading",
                                                                                                                                                       "isInner":  false,
@@ -2000,7 +2000,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "a272578",
+                                                                                                            "id":  "825bedd",
                                                                                                             "elType":  "container",
                                                                                                             "isInner":  true,
                                                                                                             "settings":  {
@@ -2024,7 +2024,7 @@
                                                                                                                          },
                                                                                                             "elements":  [
                                                                                                                              {
-                                                                                                                                 "id":  "9207d80",
+                                                                                                                                 "id":  "ca533e0",
                                                                                                                                  "elType":  "widget",
                                                                                                                                  "widgetType":  "image",
                                                                                                                                  "isInner":  false,
@@ -2051,7 +2051,7 @@
                                                                                                                                               ]
                                                                                                                              },
                                                                                                                              {
-                                                                                                                                 "id":  "136b130",
+                                                                                                                                 "id":  "94facbd",
                                                                                                                                  "elType":  "container",
                                                                                                                                  "isInner":  true,
                                                                                                                                  "settings":  {
@@ -2070,7 +2070,7 @@
                                                                                                                                               },
                                                                                                                                  "elements":  [
                                                                                                                                                   {
-                                                                                                                                                      "id":  "c55c785",
+                                                                                                                                                      "id":  "8ec37da",
                                                                                                                                                       "elType":  "widget",
                                                                                                                                                       "widgetType":  "heading",
                                                                                                                                                       "isInner":  false,
@@ -2108,7 +2108,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "4a93c62",
+                                                                                                            "id":  "7147abf",
                                                                                                             "elType":  "container",
                                                                                                             "isInner":  true,
                                                                                                             "settings":  {
@@ -2132,7 +2132,7 @@
                                                                                                                          },
                                                                                                             "elements":  [
                                                                                                                              {
-                                                                                                                                 "id":  "7ae6954",
+                                                                                                                                 "id":  "b876932",
                                                                                                                                  "elType":  "widget",
                                                                                                                                  "widgetType":  "image",
                                                                                                                                  "isInner":  false,
@@ -2159,7 +2159,7 @@
                                                                                                                                               ]
                                                                                                                              },
                                                                                                                              {
-                                                                                                                                 "id":  "b25f0db",
+                                                                                                                                 "id":  "59a8dd1",
                                                                                                                                  "elType":  "container",
                                                                                                                                  "isInner":  true,
                                                                                                                                  "settings":  {
@@ -2178,7 +2178,7 @@
                                                                                                                                               },
                                                                                                                                  "elements":  [
                                                                                                                                                   {
-                                                                                                                                                      "id":  "f897636",
+                                                                                                                                                      "id":  "c772264",
                                                                                                                                                       "elType":  "widget",
                                                                                                                                                       "widgetType":  "heading",
                                                                                                                                                       "isInner":  false,
@@ -2216,7 +2216,7 @@
                                                                                                                          ]
                                                                                                         },
                                                                                                         {
-                                                                                                            "id":  "3d9e887",
+                                                                                                            "id":  "2b5a9db",
                                                                                                             "elType":  "container",
                                                                                                             "isInner":  true,
                                                                                                             "settings":  {
@@ -2240,7 +2240,7 @@
                                                                                                                          },
                                                                                                             "elements":  [
                                                                                                                              {
-                                                                                                                                 "id":  "d2cdd0b",
+                                                                                                                                 "id":  "f3dcc24",
                                                                                                                                  "elType":  "widget",
                                                                                                                                  "widgetType":  "image",
                                                                                                                                  "isInner":  false,
@@ -2267,7 +2267,7 @@
                                                                                                                                               ]
                                                                                                                              },
                                                                                                                              {
-                                                                                                                                 "id":  "2c1949b",
+                                                                                                                                 "id":  "65b2935",
                                                                                                                                  "elType":  "container",
                                                                                                                                  "isInner":  true,
                                                                                                                                  "settings":  {
@@ -2286,7 +2286,7 @@
                                                                                                                                               },
                                                                                                                                  "elements":  [
                                                                                                                                                   {
-                                                                                                                                                      "id":  "a473520",
+                                                                                                                                                      "id":  "cfe8fbf",
                                                                                                                                                       "elType":  "widget",
                                                                                                                                                       "widgetType":  "heading",
                                                                                                                                                       "isInner":  false,

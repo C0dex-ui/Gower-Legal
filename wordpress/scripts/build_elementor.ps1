@@ -168,7 +168,7 @@ function New-Result($key, $title, $alt, $large=$false) {
 }
 
 # Header
-$brandHtml = '<a class="gower-wordmark" href="/"><span>Gower Legal</span><i aria-hidden="true"></i></a>'
+$brandHtml = '<a class="gower-wordmark" href="/"><span>Gower Legal</span><small>Pine Street, Uptown</small></a>'
 $barSettings = Merge (Boxed 1200 (Dim 8 24 8 24 $false)) @{
   flex_direction="row"; flex_justify_content="space-between"; flex_align_items="center"
   flex_wrap="nowrap"; flex_gap=(Gap 22); min_height=(Slider 88)
@@ -285,7 +285,7 @@ $about = New-Container @{
       (New-Btn "Learn More" "/#about" $INK $PAPER $TEAL_DEEP $PAPER "gower-btn gower-btn-ink")
     ) $true)
     (New-Container (Merge (Col 50) @{ _css_classes="gower-split-media gower-about-media" }) @(
-      (New-Img "headshot" "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer")
+      (New-Img "hero" "C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans")
     ) $true)
   ) $true)
 )

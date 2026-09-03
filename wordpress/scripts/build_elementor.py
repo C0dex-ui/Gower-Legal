@@ -185,7 +185,7 @@ def section_head(title, sub, dark=False):
 
 
 def build_header():
-    brand_html = '<a class="gower-wordmark" href="/"><span>Gower Legal</span><i aria-hidden="true"></i></a>'
+    brand_html = '<a class="gower-wordmark" href="/"><span>Gower Legal</span><small>Pine Street, Uptown</small></a>'
     bar = container({
         **boxed(WRAP, padding=dim(8, 24, 8, 24, False)),
         "flex_direction": "row",
@@ -413,7 +413,7 @@ def build_home():
                 btn("Learn More", "/#about", fill=INK, color=PAPER, hover_fill=TEAL_DEEP, hover_color=PAPER, css="gower-btn gower-btn-ink"),
             ], True),
             container({**col(50), "_css_classes": "gower-split-media gower-about-media"}, [
-                img("headshot", "Temporary headshot of C. Jacob Gower, New Orleans personal injury lawyer"),
+                img("hero", "C. Jacob Gower on the gallery of the Pine Street office in Uptown New Orleans"),
             ], True),
         ], True),
     ])

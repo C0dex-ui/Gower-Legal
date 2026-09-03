@@ -1,11 +1,12 @@
 ---
-version: 3.0
+version: 4.0
 name: Gower Legal homepage
-description: Wireframe-faithful Uptown New Orleans legal homepage with restrained neighborhood character.
+description: Wireframe-faithful Uptown New Orleans legal homepage with an editorial, boutique-firm finish.
 colors:
   ivory: "#F6F1E8"
   live-oak: "#2F4A3C"
   live-oak-dark: "#22372D"
+  live-oak-deep: "#1B2C24"
   brick: "#8B3A2F"
   wrought-iron: "#1C1C1C"
   brass: "#C4A46A"
@@ -18,34 +19,42 @@ typography:
 
 ## Direction
 
-Premium but neighborly: Pine Street, Magazine Street, St. Charles oaks, porches, raised houses, and a real neighborhood office. Avoid tourist shorthand, courthouse-column branding, and downtown billboard-firm styling.
+Premium but neighborly: Pine Street, Magazine Street, St. Charles oaks, porches, raised galleries, and a real neighborhood office. Avoid tourist shorthand, courthouse-column branding, and downtown billboard-firm styling.
+
+Do not use Mardi Gras purple-green-gold, fleur-de-lis wallpaper, beads, masks, or Bourbon Street neon.
 
 ## Fixed section order
 
-1. Header — text logo left; Practice Areas, About, and Call Now right.
-2. Hero — centered heading, lede, and one Call Now button on warm ivory. No hero photograph.
+1. Header — text wordmark with a brass rule and "Pine Street, Uptown"; Practice Areas, About, and Call Now right.
+2. Hero — centered heading, lede, and one Call Now button on warm ivory inside a brass inset rule. No hero photograph.
 3. Storm Claims — left copy/CTA and two stacked square images on the right. The WordPress option `gower_storm_mode` toggles this section (`on` by default).
 4. Practice Areas — centered introduction and four circles: Car Wrecks, Slip and Fall, Rideshare, Trucking Accidents.
-5. About / Who You Are — copy and facts left, one square portrait right.
+5. About / Who You Are — copy and facts left, one square porch portrait right.
 6. Testimonials — centered heading, four review cards, previous/next arrows.
 7. Results — one tall lead tile left and four tiles in a 2×2 mosaic right.
 8. Footer — one simple full-width bar.
 
 No additional pages or homepage sections.
 
+## Photography
+
+- The owner porch photograph (`assets/hero-jacob-porch.png`, media key `hero`) is the About portrait. It is framed like a parlor portrait: ivory mat, thin brass rule, square crop toward the upper third.
+- The hero carries no photograph, per the wireframe.
+- Storm shows a brass-framed pair of squares.
+- Results pairs each figure with a real Uptown street, porch, streetcar, or storm image.
+
 ## Visual system
 
-- Warm ivory is the page ground.
-- Live-oak green carries major dark bands and primary brand color.
-- Brick marks the hero italic, buttons, and short rules.
-- Wrought iron is used for strong text and the footer.
-- Brass is limited to hairlines, image rings, and controls.
-- Libre Baskerville is the editorial display face; PT Sans is the humanist body and interface face.
+- Warm ivory is the page ground; dark live-oak bands carry Storm and Testimonials; wrought iron closes the footer.
+- Brick marks the hero italic, eyebrow labels, and buttons.
+- Brass is limited to hairlines, photo frames, image rings, section rules, and carousel controls.
+- Libre Baskerville sets headlines, practice labels, and pull quotes at an editorial scale with tight tracking; PT Sans handles body, facts, nav, and buttons.
+- Photographs sit inside thin rules like Magazine Street gallery windows rather than floating crops.
 
 ## Motion
 
 - Sections fade and rise once as they enter the viewport.
-- Storm images use a gentler eased entrance.
+- Storm images ease in gently.
 - Practice circles stagger.
 - The About portrait moves only a few pixels.
 - Results reveal in sequence with a shallow clip.
@@ -54,7 +63,7 @@ No additional pages or homepage sections.
 
 ## Source of truth
 
-- Static preview: `index.html` + `styles.css`
+- Static preview: `index.html` + `styles.css` (deployed at https://gower-legal.vercel.app/)
 - Elementor builders: `wordpress/scripts/build_elementor.ps1` and `build_elementor.py`
 - WordPress chrome and motion: `wordpress/novamira-sandbox/gower-chrome.php`
 - Generated templates: `wordpress/elementor/*.json`
